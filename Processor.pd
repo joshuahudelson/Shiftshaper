@@ -1,0 +1,4 @@
+#N canvas 705 218 634 474 10;
+#X obj 100 100 signal_router 0;
+#X obj 128 100 signal_router 1;
+#X coords 0 -1 1 1 56 225 2 100 100;
