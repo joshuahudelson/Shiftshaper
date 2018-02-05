@@ -1,4 +1,4 @@
-#N canvas 43 142 1323 616 10;
+#N canvas 59 198 1323 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 460 122 hradio 14 1 0 33 empty empty empty 0 -8 0 10 -262144
 -1 -1 5;
@@ -28,7 +28,7 @@
 #X msg 17 262 1;
 #X msg 63 220 17;
 #X obj 21 136 t f f f;
-#X obj 486 46 unpack f f f f;
+#X obj 460 49 unpack f f f f;
 #X obj 232 171 < 16;
 #X obj 232 192 sel 1;
 #X obj 232 213 t b b b;
@@ -81,7 +81,7 @@
 -1 -1 0;
 #X obj 408 138 vradio 13 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 373 230 triple_bitwise \$1 \$2;
+#X obj 442 260 triple_bitwise \$1 \$2;
 #X obj 393 550 s~ reg\$1-tap2;
 #X obj 565 550 s~ reg\$1-tap3;
 #X obj 689 584 delwrite~ buffer\$1 1000;
@@ -111,24 +111,28 @@
 #X text 1175 503 BYPASS DELAY;
 #X obj 1104 422 sel 0 1 2 3;
 #X obj 1104 402 r topology\$1;
-#X obj 405 41 loadbang;
-#X msg 405 69 0;
-#X msg 486 19 5 12 20 29;
 #X floatatom 306 126 5 0 0 0 - - -, f 5;
 #X obj 310 143 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X floatatom 345 127 5 0 0 0 - - -, f 5;
-#X obj 302 172 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+#X obj 303 171 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
+-262144 -1 -1 38 256;
 #X text 424 123 B \; X;
 #X text 424 150 B \; X;
 #X text 390 136 B \; X;
-#X obj 90 80 osc~ 440;
-#X obj 136 113 *~;
-#X obj 174 52 del 10;
-#X obj 174 31 t b b;
-#X msg 154 80 0;
-#X msg 186 80 1;
+#X obj 29 505 osc~ 440;
+#X obj 75 538 *~;
+#X obj 113 477 del 10;
+#X obj 113 456 t b b;
+#X msg 93 505 0;
+#X msg 125 505 1;
+#X obj 460 16 r tap_indices\$1;
+#X obj 327 49 unpack f f f;
+#X obj 327 16 r gates\$1;
+#X obj 86 16 r freq\$1;
+#X obj 157 16 r wheel\$1;
+#X obj 235 16 r trigger\$1;
+#X obj 8 16 r delay\$1;
 #X connect 0 0 6 2;
 #X connect 0 0 8 2;
 #X connect 0 1 6 3;
@@ -329,21 +333,24 @@
 #X connect 102 2 94 0;
 #X connect 102 3 100 0;
 #X connect 103 0 102 0;
-#X connect 104 0 105 0;
-#X connect 104 0 106 0;
-#X connect 105 0 73 0;
-#X connect 105 0 71 0;
-#X connect 105 0 72 0;
-#X connect 106 0 24 0;
-#X connect 107 0 114 0;
-#X connect 108 0 117 0;
-#X connect 109 0 0 1;
-#X connect 110 0 78 0;
-#X connect 114 0 115 0;
-#X connect 115 0 0 0;
-#X connect 116 0 118 0;
-#X connect 117 0 116 0;
-#X connect 117 1 119 0;
-#X connect 118 0 115 1;
-#X connect 119 0 115 1;
+#X connect 104 0 111 0;
+#X connect 105 0 114 0;
+#X connect 106 0 0 1;
+#X connect 107 0 78 0;
+#X connect 111 0 112 0;
+#X connect 112 0 0 0;
+#X connect 113 0 115 0;
+#X connect 114 0 113 0;
+#X connect 114 1 116 0;
+#X connect 115 0 112 1;
+#X connect 116 0 112 1;
+#X connect 117 0 24 0;
+#X connect 118 0 71 0;
+#X connect 118 1 72 0;
+#X connect 118 2 73 0;
+#X connect 119 0 118 0;
+#X connect 120 0 104 0;
+#X connect 121 0 106 0;
+#X connect 122 0 105 0;
+#X connect 123 0 107 0;
 #X coords 0 -1 1 1 620 70 2 302 122;

@@ -1,7 +1,7 @@
-#N canvas 148 183 1060 552 10;
+#N canvas 108 125 1102 564 10;
 #X obj 787 59 Processor;
 #X msg 932 113 \; pd dsp \$1;
-#X obj 932 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 932 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 490 73 |;
 #X text 433 60 |;
@@ -10,8 +10,6 @@
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't matter... it's
 1-1-0;
 #X obj 727 284 signal_router4;
-#X obj 496 430 controlpanel;
-#X obj 167 214 golomber2 2 0;
 #X text 657 59 |;
 #X text 768 59 |X;
 #X text 433 130 |;
@@ -23,5 +21,7 @@
 #X text 657 199 |;
 #X text 768 199 |X;
 #X obj 167 74 golomber2 0 1;
+#X obj 167 214 golomber2 2 0;
 #X obj 167 144 golomber2 1 2;
+#X obj 167 284 controlpanel;
 #X connect 2 0 1 0;
