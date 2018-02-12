@@ -1,4 +1,4 @@
-#N canvas 43 92 1296 652 10;
+#N canvas 43 112 1296 652 10;
 #X obj 296 358 *~;
 #X obj 353 358 *~;
 #X obj 412 358 *~;
@@ -40,11 +40,11 @@
 #X obj 810 278 r~ reg2-tap1;
 #X obj 867 298 r~ reg2-tap2;
 #X obj 924 318 r~ reg2-tap3;
-#X obj 536 25 vradio 14 1 0 15 empty empty empty 0 -8 0 10 -228856
--1 -1 0;
-#X obj 550 25 vradio 14 1 0 15 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X obj 536 11 tgl 14 0 empty empty empty 17 7 0 10 -262130 -1 -1 0
+#X obj 180 390 vradio 22 1 0 15 empty empty empty 0 -8 0 10 -228856
+-1 -1 5;
+#X obj 202 390 vradio 22 1 0 15 empty empty empty 0 -8 0 10 -262144
+-1 -1 8;
+#X obj 191 368 tgl 22 0 empty empty empty 17 7 0 10 -262130 -1 -1 0
 1;
 #X obj 530 585 s~ signal_router\$1-outlet;
 #X obj 403 22 loadbang;
@@ -73,6 +73,9 @@
 #X msg 1059 299 0 0 0 0 1 0 0 0 0 0 0 0;
 #X msg 1043 320 0 0 0 1 0 0 0 0 0 0 0 0;
 #X msg 1009 362 0 1 0 0 0 0 0 0 0 0 0 0;
+#X obj 508 108 inlet;
+#X obj 560 108 inlet;
+#X obj 560 130 unpack f f;
 #X connect 0 0 28 2;
 #X connect 1 0 28 2;
 #X connect 2 0 28 2;
@@ -174,9 +177,6 @@
 #X connect 42 0 26 0;
 #X connect 43 0 28 0;
 #X connect 45 0 46 0;
-#X connect 46 0 43 0;
-#X connect 46 0 41 0;
-#X connect 46 0 42 0;
 #X connect 47 0 12 0;
 #X connect 48 0 12 0;
 #X connect 49 0 12 0;
@@ -201,4 +201,8 @@
 #X connect 68 0 25 0;
 #X connect 69 0 25 0;
 #X connect 70 0 25 0;
-#X coords 0 -1 1 1 28 225 2 536 10;
+#X connect 71 0 43 0;
+#X connect 72 0 73 0;
+#X connect 73 0 41 0;
+#X connect 73 1 42 0;
+#X coords 0 -1 1 1 44 352 2 180 368;
