@@ -1,11 +1,11 @@
-#N canvas 49 137 1283 610 10;
+#N canvas 114 126 1243 610 10;
 #X obj 971 25 Processor;
 #X text 410 63 |;
 #X obj 86 47 golomber2 0 1;
 #X obj 86 377 controlpanel;
-#X obj 86 267 golomber2 2 0;
-#X obj 86 157 golomber2 1 2;
 #X obj 852 27 Controller_Input;
 #X text 1067 121 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
 1-1-0;
+#X obj 86 267 golomber2 2 0;
+#X obj 86 157 golomber2 1 2;
