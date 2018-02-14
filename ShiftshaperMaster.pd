@@ -1,7 +1,6 @@
-#N canvas 102 102 1230 613 10;
+#N canvas 90 118 1230 613 10;
 #X obj 251 24 Shiftshaper2 0 1 2;
-#X msg 26 210 \; pd dsp \$1;
-#X obj 23 172 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
 #X obj 28 434 EQandDac;
-#X connect 2 0 1 0;
+#X text 36 40 TO DO \; - miniaturize \; - clean up \; - make unit presets
+\; - make global presets \; - random start state \; - recorder \; -
+scope \; - GEM visualizer \;;
