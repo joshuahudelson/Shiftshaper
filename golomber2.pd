@@ -1,14 +1,14 @@
-#N canvas 43 136 1323 616 10;
+#N canvas 43 148 1323 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
-#X obj 461 122 hradio 22 1 0 33 empty empty empty 0 -8 0 10 -262144
+#X obj 437 122 hradio 14 1 0 33 empty empty empty 0 -8 0 10 -262144
 -1 -1 7;
-#X text 462 102 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
+#X text 438 102 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5
 6 7 8 9;
-#X obj 461 144 hradio 22 1 0 33 empty empty empty 0 -8 0 10 -262144
+#X obj 437 136 hradio 14 1 0 33 empty empty empty 0 -8 0 10 -262144
 -1 -1 15;
-#X obj 461 166 hradio 22 1 0 33 empty empty empty 0 -8 0 10 -262144
+#X obj 437 150 hradio 14 1 0 33 empty empty empty 0 -8 0 10 -262144
 -1 -1 23;
-#X obj 461 188 hradio 22 1 0 33 empty empty empty 0 -8 0 10 -228856
+#X obj 437 164 hradio 14 1 0 33 empty empty empty 0 -8 0 10 -228856
 -1 -1 31;
 #X obj 204 483 signal_router_sixteen_bit;
 #X obj 680 388 shift_register_sixteen_bit~;
@@ -72,14 +72,14 @@
 #X obj 594 328 - 16;
 #X obj 774 328 - 16;
 #X obj 784 349 - 16;
-#X text 883 102 0 1 X;
+#X text 859 102 0 1 X;
 #X obj 203 550 s~ reg\$1-tap0;
 #X obj 375 578 s~ reg\$1-tap1;
-#X obj 432 122 vradio 22 1 0 2 empty empty empty 0 -8 0 10 -262144
+#X obj 417 122 vradio 14 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
-#X obj 432 166 vradio 22 1 0 2 empty empty empty 0 -8 0 10 -262144
+#X obj 417 150 vradio 14 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
-#X obj 404 144 vradio 22 1 0 2 empty empty empty 0 -8 0 10 -262144
+#X obj 397 136 vradio 14 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
 #X obj 442 341 triple_bitwise \$1 \$2;
 #X obj 393 550 s~ reg\$1-tap2;
@@ -111,12 +111,10 @@
 #X text 1175 503 BYPASS DELAY;
 #X obj 1104 422 sel 0 1 2 3;
 #X obj 1104 402 r topology\$1;
-#X floatatom 306 126 5 0 0 0 - - -, f 5;
+#X floatatom 306 125 5 0 0 0 - - -, f 5;
 #X obj 306 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 354 126 5 0 0 0 - - -, f 5;
-#X obj 302 212 nbx 4 20 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 15
--262144 -1 -1 0 256;
+#X floatatom 354 125 5 0 0 0 - - -, f 5;
 #X obj 29 505 osc~ 440;
 #X obj 75 538 *~;
 #X obj 113 477 del 10;
@@ -130,11 +128,12 @@
 #X obj 157 16 r wheel\$1;
 #X obj 235 16 r trigger\$1;
 #X obj 8 16 r delay\$1;
-#X text 1160 213 XOR;
+#X text 872 177 XOR;
 #X obj 354 151 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 157 40 set \$1;
 #X obj 224 46 r trigger\$1_wheel;
+#X floatatom 306 178 5 0 0 0 - - -, f 5;
 #X connect 0 0 6 2;
 #X connect 0 0 8 2;
 #X connect 0 1 6 3;
@@ -335,27 +334,27 @@
 #X connect 102 2 94 0;
 #X connect 102 3 100 0;
 #X connect 103 0 102 0;
-#X connect 104 0 108 0;
-#X connect 105 0 111 0;
+#X connect 104 0 107 0;
+#X connect 105 0 110 0;
 #X connect 106 0 0 1;
-#X connect 107 0 78 0;
-#X connect 108 0 109 0;
-#X connect 109 0 0 0;
-#X connect 110 0 112 0;
-#X connect 111 0 110 0;
-#X connect 111 1 113 0;
-#X connect 112 0 109 1;
-#X connect 113 0 109 1;
-#X connect 114 0 24 0;
-#X connect 115 0 71 0;
-#X connect 115 1 72 0;
-#X connect 115 2 73 0;
-#X connect 116 0 115 0;
-#X connect 117 0 104 0;
-#X connect 118 0 123 0;
-#X connect 119 0 105 0;
-#X connect 120 0 107 0;
+#X connect 107 0 108 0;
+#X connect 108 0 0 0;
+#X connect 109 0 111 0;
+#X connect 110 0 109 0;
+#X connect 110 1 112 0;
+#X connect 111 0 108 1;
+#X connect 112 0 108 1;
+#X connect 113 0 24 0;
+#X connect 114 0 71 0;
+#X connect 114 1 72 0;
+#X connect 114 2 73 0;
+#X connect 115 0 114 0;
+#X connect 116 0 104 0;
+#X connect 117 0 122 0;
+#X connect 118 0 105 0;
+#X connect 119 0 124 0;
+#X connect 121 0 106 0;
 #X connect 122 0 106 0;
-#X connect 123 0 106 0;
-#X connect 124 0 122 0;
-#X coords 0 -1 1 1 885 110 2 302 122;
+#X connect 123 0 121 0;
+#X connect 124 0 78 0;
+#X coords 0 -1 1 1 597 70 2 302 122;

@@ -1,6 +1,7 @@
-#N canvas 90 118 1230 613 10;
-#X obj 251 24 Shiftshaper2 0 1 2;
-#X obj 28 434 EQandDac;
-#X text 36 40 TO DO \; - miniaturize \; - clean up \; - make unit presets
-\; - make global presets \; - random start state \; - recorder \; -
-scope \; - GEM visualizer \;;
+#N canvas 43 53 1323 715 10;
+#X obj 10 5 Shiftshaper2 0 1 2;
+#X obj 878 107 EQandDac;
+#X text 988 132 TO DO \; - miniaturize \; - clean up \; - make unit
+presets \; - make global presets \; - random start state \; - recorder
+\; - scope \; - GEM visualizer \;;
+#X obj 10 353 Shiftshaper2 3 4 5;
