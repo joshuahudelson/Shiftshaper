@@ -1,10 +1,10 @@
-#N canvas 78 146 1243 610 10;
-#X text 842 241 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
+#N canvas 66 134 1243 610 10;
+#X text 753 265 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
 1-1-0;
-#X obj 80 254 controlpanel 0 1 2;
-#X obj 677 30 Processor \$1 \$2 \$3;
-#X obj 80 184 golomber2 \$3 \$1;
-#X obj 80 44 golomber2 \$1 \$2;
-#X obj 80 114 golomber2 \$2 \$3;
-#X coords 0 -1 1 1 653 348 2 80 30;
+#X obj 650 30 Processor \$1 \$2 \$3;
+#X obj 80 42 golomber2 \$1 \$2;
+#X obj 80 222 controlpanel \$1 \$2 \$3;
+#X obj 80 162 golomber2 \$3 \$1;
+#X obj 80 102 golomber2 \$2 \$3;
+#X coords 0 -1 1 1 618 316 2 80 30;

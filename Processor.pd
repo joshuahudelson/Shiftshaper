@@ -1,4 +1,4 @@
-#N canvas 233 264 693 474 10;
+#N canvas 230 268 693 474 10;
 #X obj 129 281 unpack f f;
 #X msg 129 169 1 1;
 #X msg 129 253 0 0;
@@ -14,7 +14,7 @@
 #X obj 300 100 signal_router \$1 \$2 \$3 0;
 #X obj 74 116 r xor_inline_onoff\$1\$2\$3;
 #X obj 495 90 r xor_inline_taps\$1\$2\$3;
-#X obj 328 100 signal_router \$1 \$2 \$3 1;
+#X obj 324 100 signal_router \$1 \$2 \$3 1;
 #X connect 0 0 12 0;
 #X connect 0 1 15 0;
 #X connect 1 0 0 0;
@@ -37,4 +37,4 @@
 #X connect 11 0 5 0;
 #X connect 13 0 8 0;
 #X connect 14 0 9 0;
-#X coords 0 -1 1 1 56 224 2 300 100;
+#X coords 0 -1 1 1 48 192 2 300 100;
