@@ -1,4 +1,4 @@
-#N canvas 323 194 728 363 10;
+#N canvas 320 198 728 363 10;
 #X obj 234 95 inlet~;
 #X obj 362 95 inlet~;
 #X obj 56 27 inlet;
@@ -10,7 +10,7 @@
 #X obj 56 54 sel 0 1;
 #X msg 79 119 0 1;
 #X msg 56 148 1 0;
-#X obj 269 309 *~;
+#X obj 238 252 *~;
 #X obj 56 175 unpack f f;
 #X obj 203 289 +~;
 #X connect 0 0 4 0;

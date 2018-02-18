@@ -1,13 +1,13 @@
-#N canvas 43 144 1323 616 10;
+#N canvas 43 117 1323 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
--1 -1 24;
+-1 -1 16;
 #X obj 476 134 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
--1 -1 6;
+-1 -1 22;
 #X obj 476 146 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
--1 -1 7;
+-1 -1 11;
 #X obj 476 158 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -228856
--1 -1 0;
+-1 -1 32;
 #X obj 204 483 signal_router_sixteen_bit;
 #X obj 680 388 shift_register_sixteen_bit~;
 #X obj 393 483 signal_router_sixteen_bit;
@@ -78,13 +78,13 @@
 -1 -1 0;
 #X obj 444 134 vradio 12 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 442 341 triple_bitwise \$1 \$2;
+#X obj 449 204 triple_bitwise \$1 \$2;
 #X obj 393 550 s~ reg\$1-tap2;
 #X obj 565 550 s~ reg\$1-tap3;
 #X obj 689 584 delwrite~ buffer\$1 1000;
 #X obj 1008 384 delread~ buffer\$1;
 #X obj 688 547 *~;
-#X obj 771 547 *~;
+#X obj 774 543 *~;
 #X obj 1006 547 *~;
 #X obj 1148 547 *~;
 #X obj 1147 584 throw~ reg\$2-inlet;
@@ -214,13 +214,12 @@
 #X connect 6 14 9 16;
 #X connect 6 15 8 17;
 #X connect 6 15 9 17;
+#X connect 6 15 78 0;
 #X connect 7 0 73 0;
 #X connect 7 1 74 0;
-#X connect 7 1 78 0;
 #X connect 7 1 84 0;
 #X connect 8 0 73 0;
 #X connect 8 1 74 0;
-#X connect 8 1 78 0;
 #X connect 8 1 84 0;
 #X connect 9 0 67 0;
 #X connect 9 1 68 0;

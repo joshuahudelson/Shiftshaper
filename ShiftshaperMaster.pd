@@ -1,4 +1,4 @@
-#N canvas 87 120 1245 640 10;
+#N canvas 84 124 1245 640 10;
 #X obj 872 423 EQandDac;
 #X obj 4 20 Shiftshaper2 0 1 2;
 #X text 115 482 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
