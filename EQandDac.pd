@@ -1,6 +1,6 @@
-#N canvas 43 155 1257 597 10;
+#N canvas 43 147 1257 597 10;
 #X msg 928 34 \; pd dsp \$1;
-#X obj 803 53 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 803 53 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 172 440 *~;
 #X obj 212 440 *~;
@@ -18,7 +18,7 @@
 #X msg 297 378 1 0 1 1 0 1;
 #X msg 305 398 1 1 1 1 1 1;
 #X obj 261 197 hradio 15 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 1;
 #X msg 190 312 0 0 0;
 #X msg 357 355 0 0 0 0 0 0;
 #X msg 330 302 1 0 0;
@@ -70,14 +70,14 @@
 #X obj 592 16 loadbang;
 #X msg 632 53 10000;
 #X obj 661 171 r stereochoice345;
-#X obj 84 331 r~ reg0-tap0;
-#X obj 94 351 r~ reg1-tap0;
-#X obj 104 371 r~ reg2-tap0;
+#X obj 45 283 r~ reg0-tap0;
+#X obj 55 303 r~ reg1-tap0;
+#X obj 65 323 r~ reg2-tap0;
 #X obj 484 331 r~ reg3-tap0;
 #X obj 494 351 r~ reg4-tap0;
 #X obj 504 371 r~ reg5-tap0;
-#X obj 247 97 loadbang;
-#X msg 248 119 2;
+#X obj 97 152 loadbang;
+#X msg 97 180 1;
 #X connect 1 0 0 0;
 #X connect 2 0 8 0;
 #X connect 2 0 9 0;
