@@ -1,4 +1,4 @@
-#N canvas 63 124 1259 623 10;
+#N canvas 74 144 1277 623 10;
 #X obj 403 411 EQandDac;
 #X obj 4 19 Shiftshaper2 0 1 2;
 #X text 67 491 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
@@ -6,7 +6,7 @@
 1-1-0;
 #X text 220 510 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
 \; start with 2 \;;
-#X text 323 516 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
+#X text 855 500 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
 \, 2 \, 31 \; 31 \, 31 \, 2 \, 31;
 #X text 435 522 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
 \; start with 5 input.;
