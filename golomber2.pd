@@ -1,4 +1,4 @@
-#N canvas 48 131 1239 616 10;
+#N canvas 43 139 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
@@ -70,9 +70,9 @@
 #X floatatom 302 168 5 0 0 0 - - -, f 5;
 #N canvas 43 81 450 250 (subpatch) 0;
 #X array scope\$1 79 float 1;
-#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0;
+#A 0 1 0 0 1 1 0 0 0 1 0 0 0 0 0 0 0 1 0 1 1 0 0 0 0 1 0 1 0 0 1 0
+0 1 0 1 1 1 0 1 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 1 0 0
+0 0 0 0 0 0 0 0 0 1 0 1 1 1;
 #X coords 0 1 78 0 79 42 2 0 0;
 #X restore 362 137 graph;
 #X obj 625 191 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -92,6 +92,8 @@
 #X floatatom 319 150 5 0 0 0 - - -, f 5;
 #X obj 221 186 del;
 #X obj 60 41 r freqtime\$1;
+#X text 460 168;
+#X text 501 168 3;
 #X connect 0 0 70 2;
 #X connect 0 0 71 2;
 #X connect 0 1 70 3;

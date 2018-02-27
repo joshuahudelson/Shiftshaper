@@ -1,4 +1,4 @@
-#N canvas 68 124 1277 623 10;
+#N canvas 65 128 1277 623 10;
 #X obj 403 411 EQandDac;
 #X obj 4 19 Shiftshaper2 0 1 2;
 #X text 67 491 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
@@ -12,3 +12,4 @@
 \; start with 5 input.;
 #X text 437 555 Or first one 9!!!;
 #X obj 633 19 Shiftshaper2 3 4 5;
+#X text 927 383 Tur;
