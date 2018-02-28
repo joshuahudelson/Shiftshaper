@@ -1,4 +1,4 @@
-#N canvas 43 172 1323 585 10;
+#N canvas 43 167 1323 585 10;
 #X obj 86 520 *~;
 #X obj 203 114 vradio 12 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 3;
@@ -21,7 +21,7 @@
 #X obj 770 100 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -228856
 -1 -1 0;
 #X obj 770 124 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 1054 398 *~;
 #X obj 1090 398 *~;
 #X obj 1127 428 *~;
@@ -160,7 +160,7 @@
 #X obj 227 253 t b f;
 #X obj 195 292 s trigger\$1_wheel;
 #X floatatom 484 192 5 0 0 0 - - -, f 5;
-#X msg 464 287 set \$1;
+#X msg 468 298 set \$1;
 #X connect 0 0 36 0;
 #X connect 1 0 2 0;
 #X connect 2 0 67 0;
