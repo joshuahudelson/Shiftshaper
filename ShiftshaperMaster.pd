@@ -1,4 +1,4 @@
-#N canvas 86 124 1277 623 10;
+#N canvas 80 132 1277 623 10;
 #X obj 403 411 EQandDac;
 #X obj 4 19 Shiftshaper2 0 1 2;
 #X text 67 491 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
@@ -11,8 +11,9 @@
 #X text 435 522 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
 \; start with 5 input.;
 #X text 437 555 Or first one 9!!!;
-#X text 59 426 1 del 2 del \; 1 del del 3 \; 2 del 3 del \;;
 #X obj 633 19 Shiftshaper2 3 4 5;
 #X text 218 412 Second one down on taps3 \; 37;
 #X text 899 413 First one down on tap 3 \; 72 \, with delay of 3 and
 25 \; lopass down at 1300 or so \;;
+#X text 969 473 2018;
+#X text 65 401 1st \, no del \, 97 \; 115 \;;
