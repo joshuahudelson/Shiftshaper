@@ -1,4 +1,4 @@
-#N canvas 600 264 638 474 10;
+#N canvas 594 272 638 474 10;
 #X obj 100 264 tapper \$1 \$2 \$3;
 #X msg 100 364 set \$1;
 #X msg 125 345 set \$1;
@@ -9,9 +9,9 @@
 -1 0;
 #X text 112 50 TAPS 3;
 #X obj 113 64 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 165 256;
+-262144 -1 -1 218 256;
 #X obj 113 77 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 13 256;
+-262144 -1 -1 316 256;
 #X obj 113 90 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 113 103 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -19,9 +19,18 @@
 #X obj 112 116 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 100 21 inlet;
-#X obj 304 129 outlet;
+#X obj 25 178 outlet;
 #X obj 204 19 inlet;
 #X obj 204 47 unpack f f f f f;
+#X obj 174 64 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144 -1
+-1 0;
+#X obj 174 184 sel 0 1 2 3 4;
+#X msg 420 213 set \$1;
+#X msg 556 77 0;
+#X msg 523 90 1;
+#X msg 489 103 2;
+#X msg 456 116 3;
+#X msg 420 129 4;
 #X connect 0 0 1 0;
 #X connect 0 1 2 0;
 #X connect 0 2 3 0;
@@ -35,10 +44,15 @@
 #X connect 6 0 0 0;
 #X connect 6 0 14 0;
 #X connect 8 0 0 1;
+#X connect 8 0 20 0;
 #X connect 9 0 0 2;
+#X connect 9 0 21 0;
 #X connect 10 0 0 3;
+#X connect 10 0 22 0;
 #X connect 11 0 0 4;
+#X connect 11 0 23 0;
 #X connect 12 0 0 5;
+#X connect 12 0 24 0;
 #X connect 13 0 6 0;
 #X connect 15 0 16 0;
 #X connect 16 0 8 0;
@@ -46,4 +60,16 @@
 #X connect 16 2 10 0;
 #X connect 16 3 11 0;
 #X connect 16 4 12 0;
-#X coords 0 -1 1 1 74 79 2 100 50;
+#X connect 17 0 18 0;
+#X connect 18 0 8 0;
+#X connect 18 1 9 0;
+#X connect 18 2 10 0;
+#X connect 18 3 11 0;
+#X connect 18 4 12 0;
+#X connect 19 0 17 0;
+#X connect 20 0 19 0;
+#X connect 21 0 19 0;
+#X connect 22 0 19 0;
+#X connect 23 0 19 0;
+#X connect 24 0 19 0;
+#X coords 0 -1 1 1 87 79 2 100 50;
