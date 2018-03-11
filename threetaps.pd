@@ -1,4 +1,4 @@
-#N canvas 594 272 638 474 10;
+#N canvas 582 288 638 474 10;
 #X obj 100 264 tapper \$1 \$2 \$3;
 #X msg 100 364 set \$1;
 #X msg 125 345 set \$1;
@@ -9,21 +9,21 @@
 -1 0;
 #X text 112 50 TAPS 3;
 #X obj 113 64 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 218 256;
+-262144 -1 -1 200 256;
 #X obj 113 77 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 316 256;
+-262144 -1 -1 57 256;
 #X obj 113 90 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 31 256;
 #X obj 113 103 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 58 256;
 #X obj 112 116 nbx 6 13 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 0 256;
+-262144 -1 -1 283 256;
 #X obj 100 21 inlet;
 #X obj 25 178 outlet;
 #X obj 204 19 inlet;
 #X obj 204 47 unpack f f f f f;
 #X obj 174 64 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144 -1
--1 0;
+-1 2;
 #X obj 174 184 sel 0 1 2 3 4;
 #X msg 420 213 set \$1;
 #X msg 556 77 0;
