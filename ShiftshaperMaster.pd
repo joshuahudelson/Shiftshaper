@@ -1,20 +1,20 @@
-#N canvas 72 104 1259 643 10;
-#X obj 403 460 EQandDac;
+#N canvas 66 112 1260 643 10;
+#X obj 403 490 EQandDac;
 #X obj 4 19 Shiftshaper2 0 1 2;
-#X text 67 491 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
+#X text 67 531 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
 1-1-0;
-#X text 220 510 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
+#X text 220 550 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
 \; start with 2 \;;
-#X text 870 528 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
+#X text 860 578 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
 \, 2 \, 31 \; 31 \, 31 \, 2 \, 31;
-#X text 435 522 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
+#X text 435 582 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
 \; start with 5 input.;
-#X text 437 555 Or first one 9!!!;
-#X text 1039 482 Second one down on taps3 \; 37;
-#X text 1011 524 First one down on tap 3 \; 72 \, with delay of 3 and
+#X text 437 615 Or first one 9!!!;
+#X text 1029 532 Second one down on taps3 \; 37;
+#X text 1001 574 First one down on tap 3 \; 72 \, with delay of 3 and
 25 \; lopass down at 1300 or so \;;
-#X text 1068 571 2018;
-#X text 896 482 1st \, no del \, 97 \; 115 \;;
-#X text 179 464 Trigger 1 \, Trigger all three.;
-#X obj 633 19 Shiftshaper2 3 4 5;
+#X text 1058 621 2018;
+#X text 886 532 1st \, no del \, 97 \; 115 \;;
+#X text 124 509 Trigger 1 \, Trigger all three.;
+#X obj 4 391 presetter 0 1 2;
