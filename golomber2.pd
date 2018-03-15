@@ -1,12 +1,12 @@
-#N canvas 43 147 1239 616 10;
+#N canvas 43 127 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
-#X obj 476 122 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
-#X obj 476 134 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
+#X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
+-1 -1 4;
+#X obj 476 134 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 476 146 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -262144
+#X obj 476 146 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 476 158 hradio 12 1 0 33 empty empty empty 0 -8 0 10 -228856
+#X obj 476 158 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -228856
 -1 -1 0;
 #X obj 680 388 shift_register_sixteen_bit~;
 #X obj 460 49 unpack f f f f;
@@ -247,4 +247,4 @@
 #X connect 75 0 44 0;
 #X connect 78 0 79 0;
 #X connect 79 0 0 1;
-#X coords 0 -1 1 1 570 60 2 302 122;
+#X coords 0 -1 1 1 558 60 2 302 122;

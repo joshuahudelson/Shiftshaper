@@ -1,4 +1,4 @@
-#N canvas 258 270 829 498 10;
+#N canvas 249 254 829 498 10;
 #X obj 404 258 s tap_indices\$2;
 #X obj 192 5 inlet;
 #X obj 343 220 tappicker \$1 \$2 \$3;
@@ -14,6 +14,9 @@
 #X obj 192 139 tap_iterator 13 13 0 4;
 #X obj 209 120 tap_iterator 13 13 4 8;
 #X obj 227 101 tap_iterator 13 13 11 0;
+#X obj 209 341 outlet;
+#X obj 227 322 outlet;
+#X obj 244 303 outlet;
 #X connect 1 0 7 0;
 #X connect 2 0 3 0;
 #X connect 2 1 0 0;
@@ -25,12 +28,12 @@
 #X connect 7 3 10 0;
 #X connect 8 0 13 0;
 #X connect 9 0 14 0;
-#X connect 10 0 6 0;
+#X connect 10 0 17 0;
 #X connect 10 1 2 0;
 #X connect 11 0 10 0;
 #X connect 12 0 6 0;
 #X connect 12 1 2 0;
-#X connect 13 0 6 0;
+#X connect 13 0 15 0;
 #X connect 13 1 2 0;
-#X connect 14 0 6 0;
+#X connect 14 0 16 0;
 #X connect 14 1 2 0;
