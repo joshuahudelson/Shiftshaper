@@ -1,13 +1,13 @@
-#N canvas 43 127 1239 616 10;
+#N canvas 43 131 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 4;
+-1 -1 15;
 #X obj 476 134 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 31;
 #X obj 476 146 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 13;
 #X obj 476 158 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -228856
--1 -1 0;
+-1 -1 8;
 #X obj 680 388 shift_register_sixteen_bit~;
 #X obj 460 49 unpack f f f f;
 #X obj 203 550 s~ reg\$1-tap0;
@@ -95,6 +95,7 @@
 #X text 501 168 3;
 #X msg 409 208 set \$1;
 #X floatatom 409 236 5 0 0 0 - - -, f 5;
+#X obj 302 193 s delay\$1-send;
 #X connect 0 0 69 2;
 #X connect 0 0 70 2;
 #X connect 0 1 69 3;
@@ -221,6 +222,7 @@
 #X connect 56 0 79 0;
 #X connect 57 0 56 0;
 #X connect 58 0 16 0;
+#X connect 58 0 80 0;
 #X connect 60 0 63 0;
 #X connect 61 0 60 0;
 #X connect 63 0 62 0;
