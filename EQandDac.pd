@@ -1,4 +1,4 @@
-#N canvas 43 155 1257 597 10;
+#N canvas 43 163 1257 597 10;
 #X msg 712 142 \; pd dsp \$1;
 #X obj 712 67 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -116,6 +116,10 @@
 #X obj 985 80 * 10000;
 #X floatatom 910 65 5 0 0 0 - - -, f 5;
 #X floatatom 665 65 5 0 0 0 - - -, f 5;
+#X obj 961 563 writesf~ 2;
+#X msg 829 526 start;
+#X msg 868 561 stop;
+#X msg 861 475 open fordavid2.wav;
 #X connect 1 0 0 0;
 #X connect 2 0 8 0;
 #X connect 2 0 9 0;
@@ -221,9 +225,13 @@
 #X connect 73 0 71 0;
 #X connect 74 0 79 0;
 #X connect 75 0 44 0;
+#X connect 75 0 109 0;
 #X connect 76 0 44 1;
+#X connect 76 0 109 1;
 #X connect 77 0 44 0;
+#X connect 77 0 109 0;
 #X connect 78 0 44 1;
+#X connect 78 0 109 1;
 #X connect 81 0 75 1;
 #X connect 82 0 76 1;
 #X connect 83 0 77 1;
@@ -251,4 +259,7 @@
 #X connect 106 0 53 1;
 #X connect 106 0 54 1;
 #X connect 106 0 107 0;
+#X connect 110 0 109 0;
+#X connect 111 0 109 0;
+#X connect 112 0 109 0;
 #X coords 0 -1 1 1 450 50 2 500 60;
