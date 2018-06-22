@@ -1,6 +1,6 @@
-#N canvas 60 120 1260 643 10;
-#X obj 403 490 EQandDac;
-#X obj 4 19 Shiftshaper2 0 1 2;
+#N canvas 92 102 1260 643 10;
+#X obj 395 488 EQandDac;
+#X obj 5 19 Shiftshaper2 0 1 2;
 #X text 67 531 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
 1-1-0;
@@ -17,6 +17,6 @@
 #X text 1058 621 2018;
 #X text 886 532 1st \, no del \, 97 \; 115 \;;
 #X text 124 509 Trigger 1 \, Trigger all three.;
-#X obj 4 391 presetter 0 1 2;
+#X obj 4 377 presetter 0 1 2;
 #X obj 630 19 Shiftshaper2 3 4 5;
-#X obj 630 391 presetter 3 4 5;
+#X obj 630 377 presetter 3 4 5;
