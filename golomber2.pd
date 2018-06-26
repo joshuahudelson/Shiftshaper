@@ -1,13 +1,13 @@
-#N canvas 43 131 1239 616 10;
+#N canvas 43 147 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 15;
+-1 -1 14;
 #X obj 476 134 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 31;
+-1 -1 0;
 #X obj 476 146 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 13;
+-1 -1 0;
 #X obj 476 158 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -228856
--1 -1 8;
+-1 -1 0;
 #X obj 680 388 shift_register_sixteen_bit~;
 #X obj 460 49 unpack f f f f;
 #X obj 203 550 s~ reg\$1-tap0;
@@ -69,9 +69,9 @@
 #X floatatom 302 168 5 0 0 0 - - -, f 5;
 #N canvas 43 81 450 250 (subpatch) 0;
 #X array scope\$1 79 float 1;
-#A 0 1 1 1 1 0 1 1 0 0 1 0 0 1 1 0 1 1 0 1 1 0 0 0 0 1 0 0 1 0 0 1
-1 1 1 0 0 1 0 1 1 0 0 0 0 1 1 1 0 0 1 0 1 1 1 0 1 1 0 1 0 0 1 0 1 0
-1 1 0 1 1 1 1 1 1 1 0 0 0 1;
+#A 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 1 0 0 0 0 0 1 1 0 0 1 0 1 0 0 0
+0 0 0 1 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 1 0 0 1 1 0 0 1 1 0
+1 0 0 0 0 0 1 1 1 1 0 0 1 0;
 #X coords 0 1 78 0 79 42 2 0 0;
 #X restore 362 137 graph;
 #X obj 625 191 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
@@ -79,10 +79,10 @@
 #X obj 725 187 loadbang;
 #X obj 625 235 tabwrite~ scope\$1;
 #X obj 625 212 metro 50;
-#X obj 218 272 chooser;
-#X obj 329 279 chooser;
-#X obj 673 281 chooser;
-#X obj 459 274 chooser;
+#X obj 383 300 chooser;
+#X obj 474 300 chooser;
+#X obj 656 300 chooser;
+#X obj 565 300 chooser;
 #X obj 584 483 signal_router_sixteen_bit;
 #X obj 204 483 signal_router_sixteen_bit;
 #X obj 393 483 signal_router_sixteen_bit;
