@@ -1,4 +1,4 @@
-#N canvas 369 291 1573 459 10;
+#N canvas 43 249 1323 459 10;
 #X obj 10 499 s topology\$1\$2\$3-receive;
 #X obj 29 480 s gates3\$1\$2\$3-receive;
 #X obj 48 461 s gates2\$1\$2\$3-receive;
@@ -41,10 +41,6 @@
 #X obj 267 443 s incrementer\$1\$2\$3;
 #X obj 292 422 s inctrigger\$1\$2\$3;
 #X text 260 462 Takes list of 5 values;
-#X obj 280 186 route 1.5;
-#X text 365 188 1.5 = do nothing;
-#X msg 40 182 3 0 0 2 0 1.5;
-#X text 282 164 comment;
 #X connect 35 0 0 0;
 #X connect 35 1 1 0;
 #X connect 35 2 2 0;
