@@ -1,4 +1,4 @@
-#N canvas 147 183 1138 568 10;
+#N canvas 144 187 1138 568 10;
 #X obj 395 9 inlet;
 #X obj 497 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -30,12 +30,12 @@
 #X obj 497 235 s gates3\$1\$2-topanel;
 #X obj 646 263 s gates3\$2\$3-topanel;
 #X obj 795 291 s gates3\$3\$1-topanel;
-#X msg 572 441 1 0 0 0;
+#X msg 572 441 26 0 0 0;
 #X obj 572 426 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 572 331 r tap_indices\$1-send;
 #X msg 572 399 set \$1 \$2 \$3 \$4;
-#X msg 722 441 24 0 0 0;
+#X msg 722 441 30 0 0 0;
 #X obj 722 426 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 722 399 set \$1 \$2 \$3 \$4;
@@ -69,14 +69,14 @@
 #X obj 1071 41 loadbang;
 #X floatatom 69 425 5 0 0 0 - - -, f 5;
 #X msg 69 385 set \$1;
-#X obj 69 410 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 157 388 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
 #X obj 69 305 r topology\$1\$2\$3-send;
 #X obj 69 446 s topology\$1\$2\$3-receive;
 #X obj 44 347 Gate;
 #X msg 282 386 1;
 #X obj 414 215 * 2;
-#X obj 225 516 outlet;
+#X obj 157 509 outlet;
 #X connect 0 0 55 0;
 #X connect 1 0 10 0;
 #X connect 2 0 10 0;

@@ -1,4 +1,4 @@
-#N canvas 660 176 1323 459 10;
+#N canvas 137 411 1323 459 10;
 #X obj 10 499 s topology\$1\$2\$3-receive;
 #X obj 29 480 s gates3\$1\$2\$3-receive;
 #X obj 48 461 s gates2\$1\$2\$3-receive;
@@ -41,9 +41,11 @@
 #X obj 267 443 s incrementer\$1\$2\$3;
 #X obj 332 422 s inctrigger\$1\$2\$3;
 #X text 260 462 Takes list of 5 values;
-#X msg 10 262 3 0 0 2 0 0 1 0 0 0 3;
 #X obj 37 94 inlet;
 #X obj 36 131 sel 0 1 2 3 4 5 6 7 8;
+#X text 177 261 all-3 \, taps 1&4;
+#X msg 10 262 3 0 0 2 0 0 1 0 0 0 3;
+#X msg 29 232 3 0 0 2 0 1 1 0 0 0 3;
 #X connect 35 0 0 0;
 #X connect 35 1 1 0;
 #X connect 35 2 2 0;
@@ -79,6 +81,8 @@
 #X connect 38 5 29 0;
 #X connect 38 6 28 0;
 #X connect 38 7 27 0;
-#X connect 42 0 35 0;
-#X connect 43 0 44 0;
-#X connect 44 0 42 0;
+#X connect 42 0 43 0;
+#X connect 43 0 45 0;
+#X connect 43 1 46 0;
+#X connect 45 0 35 0;
+#X connect 46 0 35 0;

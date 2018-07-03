@@ -1,4 +1,4 @@
-#N canvas 76 116 1260 643 10;
+#N canvas 64 91 1260 643 10;
 #X obj 405 573 EQandDac;
 #X obj 5 19 Shiftshaper2 0 1 2;
 #X text 66 670 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
@@ -24,10 +24,8 @@
 \, 74 \, 81 \, 88 \; 195 \, 230 \, 370 \, 418 \, 439 \, 449 \, 472
 \, 474 \, 483 \, 485 \, 510 \; 862 \, 926 \, 928 \,;
 #X text 1020 718 trigger 1 \, 4/25: 161 \, 163 \,;
-#X obj 930 597 Controller_Input;
-#X text 63 487 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
-second incrementer \, #461 (like \, 12 and 21 on second and third registers)
-\;;
-#X text 758 485 TO DO \; - make marker->switch preset panel \, track->switch
-golomber \;;
+#X obj 863 599 Controller_Input;
 #X obj 630 377 presetter 3 4 5;
+#X text 31 555 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
+second incrementer \, #461 \; (like \, 12 and 21 on second and third
+registers) \;;
