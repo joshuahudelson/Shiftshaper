@@ -1,9 +1,9 @@
-#N canvas 141 128 1039 640 10;
+#N canvas 135 108 1039 640 10;
 #X obj 234 344 tapper \$1 \$2 \$3;
 #X obj 315 131 nbx 5 12 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 315 120 nbx 5 12 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--262144 -1 -1 230 256;
+-262144 -1 -1 0 256;
 #X obj 315 143 nbx 5 12 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -262144 -1 -1 0 256;
 #X obj 315 155 nbx 5 12 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -73,20 +73,12 @@
 #X msg 186 73 set \$1;
 #X msg 218 55 set \$1;
 #X msg 250 36 set \$1;
-#X obj 572 245 PresetsBig \$1 \$2 \$3;
+#X obj 588 415 PresetsBig \$1 \$2 \$3;
 #X obj 588 171 hradio 15 1 0 8 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X floatatom 408 558 5 0 0 0 - - -, f 5;
-#X obj 359 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 350 536 Next;
-#X text 406 535 set;
-#X obj 470 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X text 447 536 actualize;
-#X obj 429 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 429 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 532 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 532 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 635 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -101,6 +93,8 @@
 #X obj 827 19 t f b;
 #X msg 830 330 0 \, 8 \, 16;
 #X obj 830 308 r clearpanels\$1\$2\$3;
+#X obj 627 352 loadbang;
+#X msg 627 380 0;
 #X connect 1 0 0 2;
 #X connect 2 0 0 1;
 #X connect 3 0 0 3;
@@ -154,24 +148,26 @@
 #X connect 50 0 3 0;
 #X connect 51 0 4 0;
 #X connect 53 0 52 0;
-#X connect 65 0 60 0;
-#X connect 65 1 61 0;
-#X connect 65 2 62 0;
-#X connect 65 3 63 0;
-#X connect 65 4 64 0;
-#X connect 66 0 65 0;
-#X connect 67 0 60 0;
-#X connect 67 1 61 0;
-#X connect 67 2 62 0;
-#X connect 67 3 63 0;
-#X connect 67 4 64 0;
-#X connect 68 0 69 0;
-#X connect 69 0 67 0;
-#X connect 69 1 66 0;
-#X connect 70 0 39 0;
-#X connect 70 0 40 0;
-#X connect 70 0 41 0;
-#X connect 70 0 42 0;
-#X connect 70 0 43 0;
-#X connect 71 0 70 0;
+#X connect 59 0 54 0;
+#X connect 59 1 55 0;
+#X connect 59 2 56 0;
+#X connect 59 3 57 0;
+#X connect 59 4 58 0;
+#X connect 60 0 59 0;
+#X connect 61 0 54 0;
+#X connect 61 1 55 0;
+#X connect 61 2 56 0;
+#X connect 61 3 57 0;
+#X connect 61 4 58 0;
+#X connect 62 0 63 0;
+#X connect 63 0 61 0;
+#X connect 63 1 60 0;
+#X connect 64 0 39 0;
+#X connect 64 0 40 0;
+#X connect 64 0 41 0;
+#X connect 64 0 42 0;
+#X connect 64 0 43 0;
+#X connect 65 0 64 0;
+#X connect 66 0 67 0;
+#X connect 67 0 53 0;
 #X coords 0 -1 1 1 606 90 2 300 100;
