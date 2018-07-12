@@ -1,54 +1,54 @@
-#N canvas 43 105 1257 662 10;
+#N canvas 43 81 1257 662 10;
 #X msg 612 377 \; pd dsp \$1;
 #X obj 612 206 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 671 616 dac~;
-#X obj 201 459 lop~;
-#X obj 392 487 lop~;
-#X obj 851 499 lop~;
-#X obj 1042 527 lop~;
+#X obj 131 459 lop~;
+#X obj 322 487 lop~;
+#X obj 921 499 lop~;
+#X obj 1112 527 lop~;
 #X text 612 231 DSP;
-#X obj 153 14 loadbang;
-#X obj 432 247 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 23 14 loadbang;
+#X obj 402 247 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 6350 1;
-#X obj 278 519 t f f;
-#X obj 278 557 abs;
-#X obj 278 538 - 1;
-#X obj 200 598 *~;
-#X obj 391 598 *~;
-#X obj 850 598 *~;
-#X obj 1041 598 *~;
-#X obj 677 247 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 208 519 t f f;
+#X obj 208 557 abs;
+#X obj 208 538 - 1;
+#X obj 130 598 *~;
+#X obj 321 598 *~;
+#X obj 920 598 *~;
+#X obj 1111 598 *~;
+#X obj 707 247 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 6350 1;
-#X obj 934 524 t f f;
-#X obj 934 562 abs;
-#X obj 934 543 - 1;
-#X obj 432 204 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
+#X obj 1004 524 t f f;
+#X obj 1004 562 abs;
+#X obj 1004 543 - 1;
+#X obj 402 204 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
 -262144 -1 -1 12700 1;
-#X obj 677 204 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
+#X obj 707 204 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
 -262144 -1 -1 12700 1;
-#X text 400 204 LoP;
-#X text 645 204 LoP;
-#X text 401 247 Pan;
-#X text 645 247 Pan;
-#X obj 428 172 r lopassl;
-#X obj 674 172 r lopassr;
-#X obj 428 152 r panl;
-#X obj 674 152 r panr;
-#X msg 153 187 1;
-#X msg 153 231 0.5;
-#X obj 565 163 * 10000;
-#X obj 810 158 * 10000;
-#X floatatom 810 204 5 0 0 0 - - -, f 5;
-#X floatatom 565 204 5 0 0 0 - - -, f 5;
+#X text 370 204 LoP;
+#X text 675 204 LoP;
+#X text 371 247 Pan;
+#X text 675 247 Pan;
+#X obj 398 172 r lopassl;
+#X obj 704 172 r lopassr;
+#X obj 398 152 r panl;
+#X obj 704 152 r panr;
+#X msg 23 187 1;
+#X msg 23 231 0.5;
+#X obj 535 163 * 10000;
+#X obj 840 158 * 10000;
+#X floatatom 840 204 5 0 0 0 - - -, f 5;
+#X floatatom 535 204 5 0 0 0 - - -, f 5;
 #X obj 591 616 writesf~ 2;
 #X msg 591 550 start;
 #X msg 591 578 stop;
 #X msg 591 522 open testshift.wav;
-#X obj 850 205 panner-presets 3 4 5;
-#X obj 200 205 panner-presets 0 1 2;
-#X floatatom 951 416 5 0 0 0 - - -, f 5;
-#X floatatom 301 394 5 0 0 0 - - -, f 5;
+#X obj 920 205 panner-presets 3 4 5;
+#X obj 130 205 panner-presets 0 1 2;
+#X floatatom 1021 416 5 0 0 0 - - -, f 5;
+#X floatatom 231 394 5 0 0 0 - - -, f 5;
 #X msg 572 31 0;
 #X connect 1 0 0 0;
 #X connect 3 0 13 0;
@@ -103,4 +103,4 @@
 #X connect 44 0 4 1;
 #X connect 45 0 42 0;
 #X connect 45 0 41 0;
-#X coords 0 -1 1 1 850 70 2 200 200;
+#X coords 0 -1 1 1 1000 70 2 125 200;

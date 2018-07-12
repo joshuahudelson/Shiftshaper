@@ -1,31 +1,31 @@
 #N canvas 43 53 1323 715 10;
-#X obj 228 481 EQandDac;
-#X obj 37 12 Shiftshaper2 0 1 2;
-#X text 61 562 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
+#X obj 157 445 EQandDac;
+#X obj 40 42 Shiftshaper2 0 1 2;
+#X text 221 539 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
 \; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
 1-1-0;
-#X text 214 581 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
+#X text 393 569 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
 \; start with 2 \;;
-#X text 808 621 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
+#X text 862 574 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
 \, 2 \, 31 \; 31 \, 31 \, 2 \, 31;
-#X text 332 600 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
+#X text 517 598 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
 \; start with 5 input.;
-#X text 334 633 Or first one 9!!!;
-#X text 37 703 Second one down on taps3 \; 37;
-#X text 975 621 First one down on tap 3 \; 72 \, with delay of 3 and
+#X text 519 631 Or first one 9!!!;
+#X text 389 650 Second one down on taps3 \; 37;
+#X text 1015 587 First one down on tap 3 \; 72 \, with delay of 3 and
 25 \; lopass down at 1300 or so \;;
-#X text 1032 668 2018;
-#X text 664 662 1st \, no del \, 97 \; 115 \;;
-#X text 480 640 Trigger 1 \, Trigger all three.;
-#X obj 37 370 presetter 0 1 2;
-#X obj 662 12 Shiftshaper2 3 4 5;
-#X text 936 604 trigger 16: 74;
-#X text 784 714 trigger 1: 6 \, 14 \, 29 \, 30 \, 31 \, (58) \, 62
+#X text 1072 634 2018;
+#X text 1142 644 1st \, no del \, 97 \; 115 \;;
+#X text 634 577 Trigger 1 \, Trigger all three.;
+#X obj 40 334 presetter 0 1 2;
+#X text 976 570 trigger 16: 74;
+#X text 641 633 trigger 1: 6 \, 14 \, 29 \, 30 \, 31 \, (58) \, 62
 \, 74 \, 81 \, 88 \; 195 \, 230 \, 370 \, 418 \, 439 \, 449 \, 472
 \, 474 \, 483 \, 485 \, 510 \; 862 \, 926 \, 928 \,;
-#X text 1052 606 trigger 1 \, 4/25: 161 \, 163 \,;
-#X obj 1107 503 Controller_Input;
-#X text 257 686 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
+#X text 1092 572 trigger 1 \, 4/25: 161 \, 163 \,;
+#X obj 599 536 Controller_Input;
+#X text 38 605 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
 second incrementer \, #461 \; (like \, 12 and 21 on second and third
 registers) \;;
-#X obj 662 370 presetter 3 4 5;
+#X obj 667 334 presetter 3 4 5;
+#X obj 667 42 Shiftshaper2 3 4 5;

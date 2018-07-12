@@ -1,7 +1,7 @@
-#N canvas 50 199 1243 382 10;
+#N canvas 47 203 1243 382 10;
 #X obj 638 30 Processor \$1 \$2 \$3;
 #X obj 80 42 golomber2 \$1 \$2;
 #X obj 80 222 controlpanel \$1 \$2 \$3;
 #X obj 80 162 golomber2 \$3 \$1;
 #X obj 80 102 golomber2 \$2 \$3;
-#X coords 0 -1 1 1 606 358 2 80 30;
+#X coords 0 -1 1 1 606 292 2 80 30;
