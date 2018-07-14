@@ -1,4 +1,4 @@
-#N canvas 137 411 1323 459 10;
+#N canvas 43 309 1323 459 10;
 #X obj 10 499 s topology\$1\$2\$3-receive;
 #X obj 29 480 s gates3\$1\$2\$3-receive;
 #X obj 48 461 s gates2\$1\$2\$3-receive;

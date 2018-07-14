@@ -1,4 +1,4 @@
-#N canvas 81 173 1267 588 10;
+#N canvas 78 177 1267 588 10;
 #X obj 45 65 f;
 #X obj 81 65 + 1;
 #X msg 63 46 0;
@@ -104,7 +104,7 @@
 #X msg 514 179 set \$1;
 #X msg 777 178 set \$1;
 #X msg 1037 180 set \$1;
-#X obj 564 30 t b b f f;
+#X obj 639 8 t b b f f;
 #X obj 554 511 pack f f f f f f f f f f f f;
 #X obj 554 546 outlet;
 #X obj 195 14 inlet;
