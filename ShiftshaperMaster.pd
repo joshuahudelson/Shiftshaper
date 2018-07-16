@@ -24,7 +24,7 @@
 \, 474 \, 483 \, 485 \, 510 \; 862 \, 926 \, 928 \,;
 #X text 1092 572 trigger 1 \, 4/25: 161 \, 163 \,;
 #X obj 599 536 Controller_Input;
-#X text 38 605 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
+#X text 34 624 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
 second incrementer \, #461 \; (like \, 12 and 21 on second and third
 registers) \;;
 #X obj 667 42 Shiftshaper2 3 4 5;

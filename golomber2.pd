@@ -1,4 +1,4 @@
-#N canvas 82 139 1239 616 10;
+#N canvas 73 151 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;

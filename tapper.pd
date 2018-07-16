@@ -1,4 +1,4 @@
-#N canvas 448 259 829 498 10;
+#N canvas 442 267 829 498 10;
 #X obj 404 258 s tap_indices\$2;
 #X obj 192 5 inlet;
 #X obj 343 220 tappicker \$1 \$2 \$3;
@@ -7,10 +7,10 @@
 #X obj 606 122 inlet;
 #X obj 616 103 inlet;
 #X obj 626 84 inlet;
-#X obj 637 65 inlet;
+#X obj 637 64 inlet;
 #X text 445 21 Trigger without incrementing;
 #X obj 659 4 inlet;
-#X obj 207 119 tap_iterator 13 13 4 8;
+#X obj 210 120 tap_iterator 13 13 4 8;
 #X obj 136 325 pack f f f f;
 #X obj 136 252 t b f;
 #X obj 163 231 t b f;
@@ -19,8 +19,8 @@
 #X obj 192 26 sel 0 1 2 3;
 #X obj 343 21 sel 0 1 2 3;
 #X obj 192 139 tap_iterator 13 13 0 4;
-#X obj 260 75 tap_iterator 0 7 4 8;
-#X obj 227 101 tap_iterator 13 13 11 0;
+#X obj 247 81 tap_iterator 0 7 4 8;
+#X obj 229 101 tap_iterator 13 13 11 0;
 #X connect 1 0 17 0;
 #X connect 2 0 3 0;
 #X connect 2 1 0 0;
