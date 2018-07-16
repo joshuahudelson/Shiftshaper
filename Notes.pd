@@ -1,0 +1,25 @@
+#N canvas 43 85 1280 297 10;
+#X text 202 40 2: 12 or 13 \, 14!!! \; 3: 21 \; wheel: 2 \; delay1:300
+\; delay2: 107 \; delay3: 212 \; Oh \, delays don't \; matter... it's
+1-1-0;
+#X text 374 70 self-reg \; 14 \, 16 \, 2 \, 7 \; all xor \; 41ms delay
+\; start with 2 \;;
+#X text 843 75 4 \, 9 \, 14 \, 1 \; 0 \, 30 \, 11 \, 31 \; 0 \, 31
+\, 2 \, 31 \; 31 \, 31 \, 2 \, 31;
+#X text 498 99 17 \, 21 \, XOR (1st reg nothing) \, delay 3 and 25
+\; start with 5 input.;
+#X text 500 132 Or first one 9!!!;
+#X text 370 151 Second one down on taps3 \; 37;
+#X text 996 88 First one down on tap 3 \; 72 \, with delay of 3 and
+25 \; lopass down at 1300 or so \;;
+#X text 1053 135 2018;
+#X text 1123 145 1st \, no del \, 97 \; 115 \;;
+#X text 615 78 Trigger 1 \, Trigger all three.;
+#X text 957 71 trigger 16: 74;
+#X text 622 134 trigger 1: 6 \, 14 \, 29 \, 30 \, 31 \, (58) \, 62
+\, 74 \, 81 \, 88 \; 195 \, 230 \, 370 \, 418 \, 439 \, 449 \, 472
+\, 474 \, 483 \, 485 \, 510 \; 862 \, 926 \, 928 \,;
+#X text 1073 73 trigger 1 \, 4/25: 161 \, 163 \,;
+#X text 15 125 delays: 6 5 0 \; impulse: 2 \; topology: 1+ \; gates:
+second incrementer \, #461 \; (like \, 12 and 21 on second and third
+registers) \;;

@@ -1,4 +1,4 @@
-#N canvas 47 203 1243 382 10;
+#N canvas 43 227 1243 382 10;
 #X obj 638 30 Processor \$1 \$2 \$3;
 #X obj 80 42 golomber2 \$1 \$2;
 #X obj 80 222 controlpanel \$1 \$2 \$3;
