@@ -1,4 +1,4 @@
-#N canvas 46 85 1323 687 10;
+#N canvas 42 90 1323 687 10;
 #X obj 157 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 40 334 presetter 0 1 2;
@@ -7,3 +7,13 @@
 #X obj 667 42 Shiftshaper2 3 4 5;
 #X text 9 370 126;
 #X obj 667 334 presetter 3 4 5;
+#X text 315 561 Cycle \, Set --- REW \, FFW \, STOP \, PLAY \, REC
+\; 4 knobs \, four faders \;;
+#X text 25 558 Make LEDs for each Shapeshifter2 \; Make random WHEEL
+values actually work \; Make another XOR option or two \; Make Rhythmer
+(should it happen before the effects? Hrmm... \; Make Global Presets
+;
+#X text 672 557 1 DSP on/off \; 2 Reverb on/off \; 3 Four buttons for
+stereo (both sides) - or just one for Roamer \; 4 Flush buffer? \;
+5 Wheel rolls (at least two) \; 6 Probably some stuff for the rhythmer...
+;

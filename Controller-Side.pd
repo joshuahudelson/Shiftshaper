@@ -1,4 +1,4 @@
-#N canvas 43 143 1291 572 10;
+#N canvas 43 110 1291 613 10;
 #X obj 608 5 r ctl-46;
 #X obj 17 215 r ctl-58;
 #X obj 141 222 r ctl-59;
@@ -12,7 +12,7 @@
 #X obj 789 90 sel 127;
 #X obj 608 33 sel 127;
 #X obj 516 33 sel 127;
-#X obj 104 8 r fromconverter;
+#X obj 104 -22 r fromconverter;
 #X obj 1031 28 Converter;
 #X obj 410 259 Gate;
 #X obj 647 255 Gate;
@@ -67,7 +67,7 @@
 #X obj 809 117 t b b;
 #X obj 248 63 sel 6 14 22;
 #X obj 322 91 sel 7 15 23;
-#X obj 104 35 sel 16 17 18 19 20 21;
+#X obj 104 5 sel 16 17 18 19 20 21;
 #X text 263 36 Main Presets;
 #X text 334 65 Left Triggers;
 #X text 407 91 Right Triggers;
@@ -81,6 +81,13 @@
 #X obj 322 161 s trigger3_wheel;
 #X obj 346 141 s trigger4_wheel;
 #X obj 371 121 s trigger5_wheel;
+#X msg 104 58 0;
+#X msg 128 37 1;
+#X msg 153 58 2;
+#X msg 176 37 3;
+#X msg 200 58 4;
+#X msg 224 35 5;
+#X obj 176 96 s globalpresets;
 #X connect 0 0 11 0;
 #X connect 1 0 8 0;
 #X connect 2 0 9 0;
@@ -150,8 +157,20 @@
 #X connect 65 2 79 0;
 #X connect 65 3 16 1;
 #X connect 65 3 15 1;
+#X connect 66 0 80 0;
+#X connect 66 1 81 0;
+#X connect 66 2 82 0;
+#X connect 66 3 83 0;
+#X connect 66 4 84 0;
+#X connect 66 5 85 0;
 #X connect 66 6 64 0;
 #X connect 71 0 29 1;
 #X connect 71 0 55 0;
 #X connect 72 0 40 1;
 #X connect 72 0 54 0;
+#X connect 80 0 86 0;
+#X connect 81 0 86 0;
+#X connect 82 0 86 0;
+#X connect 83 0 86 0;
+#X connect 84 0 86 0;
+#X connect 85 0 86 0;
