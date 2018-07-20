@@ -1,4 +1,4 @@
-#N canvas 633 162 895 573 10;
+#N canvas 505 198 895 573 10;
 #X msg 26 100 0 0 0;
 #X msg 46 78 1 1 1;
 #X msg 66 58 0 0 1;
@@ -18,7 +18,7 @@
 #X obj 211 18 r delay\$1\$2\$3-send;
 #X msg 211 132 1 1 1;
 #X msg 246 94 6 5 0;
-#X obj 368 262 s xor_inline_taps\$1\$2\$3;
+#X obj 368 269 s xor_inline_taps\$1\$2\$3;
 #X msg 368 243 0 0 5 0;
 #X msg 433 167 0 5 6 10;
 #X msg 449 148 5 0 10 0;

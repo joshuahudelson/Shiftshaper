@@ -3,12 +3,12 @@
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 40 334 presetter 0 1 2;
 #X obj 1168 445 Controller_Input;
-#X obj 667 334 presetter 3 4 5;
 #X obj 1168 473 Notes;
 #X obj 667 42 Shiftshaper2 3 4 5;
-#X text 474 548 Move incrementer outside of everything. Have universal
+#X text 141 573 Move incrementer outside of everything. Have universal
 presets. Increment from outside using the universal.;
-#X text 484 605 Does the Flusher work for separate 3 delays?;
-#X text 486 650 The 1 trigger should be a 1 in the highest bit place
+#X text 151 630 Does the Flusher work for separate 3 delays?;
+#X text 153 675 The 1 trigger should be a 1 in the highest bit place
 \, not lowest. See if that works.;
-#X text 938 545 comment;
+#X obj 667 334 presetter 3 4 5;
+#X text 9 370 126;

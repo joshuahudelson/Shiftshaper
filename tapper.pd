@@ -1,4 +1,4 @@
-#N canvas 442 267 829 498 10;
+#N canvas 439 243 829 498 10;
 #X obj 404 258 s tap_indices\$2;
 #X obj 192 5 inlet;
 #X obj 343 220 tappicker \$1 \$2 \$3;
