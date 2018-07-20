@@ -1,4 +1,4 @@
-#N canvas 381 252 790 489 10;
+#N canvas 378 256 790 489 10;
 #X obj 170 31 inlet;
 #X obj 388 401 s wheel\$1;
 #X obj 428 382 s wheel\$2;
@@ -14,9 +14,9 @@
 #X obj 468 156 random 7000;
 #X obj 567 156 random 7000;
 #X msg 219 286 65535 2 2;
-#X msg 202 327 2 2 2;
 #X obj 202 87 sel 0 1 2 3 4;
-#X connect 0 0 16 0;
+#X msg 202 327 32768 32768 32768;
+#X connect 0 0 15 0;
 #X connect 4 0 1 0;
 #X connect 4 1 2 0;
 #X connect 4 2 3 0;
@@ -32,9 +32,9 @@
 #X connect 12 0 5 1;
 #X connect 13 0 5 2;
 #X connect 14 0 4 0;
-#X connect 15 0 4 0;
-#X connect 16 0 15 0;
-#X connect 16 1 14 0;
-#X connect 16 2 9 0;
-#X connect 16 3 10 0;
-#X connect 16 4 6 0;
+#X connect 15 0 16 0;
+#X connect 15 1 14 0;
+#X connect 15 2 9 0;
+#X connect 15 3 10 0;
+#X connect 15 4 6 0;
+#X connect 16 0 4 0;

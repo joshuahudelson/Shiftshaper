@@ -1,14 +1,9 @@
-#N canvas 43 53 1323 715 10;
-#X obj 157 445 EQandDac;
+#N canvas 46 85 1323 687 10;
+#X obj 157 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 40 334 presetter 0 1 2;
 #X obj 1168 445 Controller_Input;
 #X obj 1168 473 Notes;
 #X obj 667 42 Shiftshaper2 3 4 5;
-#X text 141 573 Move incrementer outside of everything. Have universal
-presets. Increment from outside using the universal.;
-#X text 151 630 Does the Flusher work for separate 3 delays?;
-#X text 153 675 The 1 trigger should be a 1 in the highest bit place
-\, not lowest. See if that works.;
-#X obj 667 334 presetter 3 4 5;
 #X text 9 370 126;
+#X obj 667 334 presetter 3 4 5;
