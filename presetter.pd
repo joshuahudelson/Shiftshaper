@@ -1,9 +1,9 @@
-#N canvas 72 114 1157 640 10;
+#N canvas 203 108 1157 640 10;
 #X obj 237 403 tapper \$1 \$2 \$3;
 #X obj 317 117 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 1 256;
+-262144 -1 -1 0 256;
 #X obj 317 100 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 40 256;
+-262144 -1 -1 15 256;
 #X obj 317 134 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
 #X obj 317 151 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
@@ -13,14 +13,14 @@
 #X text 275 112 91;
 #X obj 384 100 vradio 17 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X msg 346 36 set \$1;
+#X msg 321 58 set \$1;
 #X obj 205 379 t f f;
 #X obj 406 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 406 143 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 406 40 r pads\$1\$2\$3-0;
-#X obj 39 57 presets0;
+#X obj 25 57 presets0;
 #X obj 222 -92 r incrementer\$1\$2\$3;
 #X obj 385 11 r inctrigger\$1\$2\$3;
 #X obj 417 324 Flusher \$1 \$2 \$3;
@@ -38,7 +38,7 @@
 #X msg 317 -30 set \$1;
 #X msg 317 -51 set \$1;
 #X obj 802 299 PresetsBig \$1 \$2 \$3;
-#X obj 441 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 441 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 542 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -54,11 +54,11 @@
 #X msg 1000 -24 0 0 0;
 #X obj 1000 87 unpack f f f;
 #X obj 507 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 507 143 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 608 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 608 143 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 507 78 moduleighter;
@@ -76,6 +76,22 @@
 #X obj 702 104 panner-presets \$1 \$2 \$3;
 #X obj 702 196 s~ panpre\$1\$2\$3-l-send;
 #X obj 896 196 s~ panpre\$1\$2\$3-r-send;
+#X obj 403 102 tgl 15 0 empty empty empty 17 7 0 10 -262144 -66577
+-66577 0 1;
+#X obj 403 -65 r BigLED\$1\$2\$3;
+#X msg 670 -13 set \$1;
+#X floatatom 670 20 5 0 0 0 - - -, f 5;
+#X obj 670 -41 t f f;
+#X obj 757 -20 sel 1;
+#X obj 789 5 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 757 44 3;
+#X obj 757 -60 r roameronoff\$1\$2\$3;
+#X obj 670 -84 r stereosetting\$1\$2\$3;
+#X obj 757 -39 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 25 82 t b f;
+#X msg 25 106 0;
 #X connect 1 0 0 2;
 #X connect 2 0 0 1;
 #X connect 3 0 0 3;
@@ -92,7 +108,7 @@
 #X connect 11 0 53 0;
 #X connect 12 0 13 0;
 #X connect 12 0 22 0;
-#X connect 13 0 2 0;
+#X connect 13 0 72 0;
 #X connect 14 0 21 0;
 #X connect 15 0 7 0;
 #X connect 16 0 20 0;
@@ -149,4 +165,19 @@
 #X connect 57 0 50 0;
 #X connect 58 0 59 0;
 #X connect 58 1 60 0;
+#X connect 62 0 61 0;
+#X connect 63 0 64 0;
+#X connect 64 0 58 0;
+#X connect 65 0 63 0;
+#X connect 65 1 58 0;
+#X connect 66 0 68 0;
+#X connect 66 1 67 0;
+#X connect 67 0 64 0;
+#X connect 68 0 58 0;
+#X connect 69 0 71 0;
+#X connect 70 0 65 0;
+#X connect 71 0 66 0;
+#X connect 72 0 73 0;
+#X connect 72 1 2 0;
+#X connect 73 0 5 0;
 #X coords 0 -1 1 1 606 68 2 300 100;

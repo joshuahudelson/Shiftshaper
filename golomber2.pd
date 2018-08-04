@@ -1,4 +1,4 @@
-#N canvas 73 151 1239 616 10;
+#N canvas 72 129 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
@@ -92,6 +92,9 @@
 #X obj 1051 192 t b f;
 #X obj 1085 220 t b f;
 #X obj 27 381 metro 150;
+#X obj 206 32 r wheeler\$1;
+#X obj 206 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
 #X connect 0 0 57 2;
 #X connect 0 0 58 2;
 #X connect 0 1 57 3;
@@ -251,4 +254,6 @@
 #X connect 76 0 69 0;
 #X connect 76 1 69 2;
 #X connect 77 0 51 0;
+#X connect 78 0 79 0;
+#X connect 79 0 45 0;
 #X coords 0 -1 1 1 558 60 2 302 122;

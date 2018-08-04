@@ -1,26 +1,26 @@
-#N canvas 225 189 1038 536 10;
-#X obj 87 222 panner;
-#X obj 125 36 r~ reg\$1-tap0;
-#X obj 213 64 r~ reg\$2-tap0;
-#X obj 301 92 r~ reg\$3-tap0;
+#N canvas 222 193 1038 536 10;
+#X obj 87 589 panner;
+#X obj 125 403 r~ reg\$1-tap0;
+#X obj 213 431 r~ reg\$2-tap0;
+#X obj 301 459 r~ reg\$3-tap0;
 #X obj 841 386 inlet;
 #X obj 453 403 hradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 2;
 #X obj 456 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2450 1;
+-1 -1 0 1;
 #X obj 526 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 595 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 453 250 unpack f f f;
-#X text 10 194 Need to put limits so can't exceed 1 and zero in panner?
+#X text 10 561 Need to put limits so can't exceed 1 and zero in panner?
 ;
 #X obj 563 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 631 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
 #X obj 493 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 700 1;
+-1 -1 0 1;
 #X obj 453 189 t b b;
 #X msg 453 229 0.5 0.5 0.5;
 #X msg 485 209 0.333 0.333 0.333;
@@ -29,21 +29,20 @@
 #X msg 471 165 0 0.5 1;
 #X msg 503 145 0.666 0.333 0.666;
 #X text 832 364 selector;
-#X obj 174 222 panner;
-#X obj 261 222 panner;
-#X obj 87 406 outlet~;
-#X obj 88 294 +~;
-#X obj 283 294 +~;
-#X obj 88 322 +~;
-#X obj 283 322 +~;
-#X obj 283 406 outlet~;
+#X obj 174 589 panner;
+#X obj 261 589 panner;
+#X obj 87 773 outlet~;
+#X obj 88 661 +~;
+#X obj 283 661 +~;
+#X obj 88 689 +~;
+#X obj 283 689 +~;
+#X obj 283 773 outlet~;
 #X text 539 17 Mono \, Split \, Single \, Roaming;
 #X obj 490 46 t b b;
 #X msg 490 98 0.5 0 0;
 #X msg 522 76 0.5 0 0;
-#X obj 834 44 roamer-three;
 #X obj 453 18 sel 0 1 2 3;
-#X text 719 143 Make all of them go through roamers \, so it sets the
+#X text 593 70 Make all of them go through roamers \, so it sets the
 line instantly... so the line works for both the stero shifts and the
 roamers....;
 #X floatatom 237 4 5 0 0 0 - - -, f 5;
@@ -62,13 +61,13 @@ roamers....;
 #X connect 2 0 22 2;
 #X connect 3 0 23 2;
 #X connect 4 0 5 0;
-#X connect 5 0 37 0;
+#X connect 5 0 36 0;
 #X connect 6 0 0 0;
 #X connect 7 0 22 0;
 #X connect 8 0 23 0;
-#X connect 9 0 38 0;
-#X connect 9 1 41 0;
-#X connect 9 2 42 0;
+#X connect 9 0 37 0;
+#X connect 9 1 40 0;
+#X connect 9 2 41 0;
 #X connect 11 0 22 1;
 #X connect 12 0 23 1;
 #X connect 13 0 0 1;
@@ -95,25 +94,25 @@ roamers....;
 #X connect 31 1 33 0;
 #X connect 32 0 9 0;
 #X connect 33 0 17 0;
-#X connect 35 0 14 0;
-#X connect 35 1 18 0;
-#X connect 35 2 31 0;
-#X connect 35 3 44 0;
-#X connect 37 0 35 0;
-#X connect 38 0 6 0;
-#X connect 39 0 40 0;
+#X connect 34 0 14 0;
+#X connect 34 1 18 0;
+#X connect 34 2 31 0;
+#X connect 34 3 43 0;
+#X connect 36 0 34 0;
+#X connect 37 0 6 0;
+#X connect 38 0 39 0;
+#X connect 38 0 44 0;
 #X connect 39 0 45 0;
-#X connect 40 0 46 0;
-#X connect 41 0 7 0;
-#X connect 42 0 8 0;
-#X connect 43 0 38 2;
-#X connect 43 0 41 2;
-#X connect 43 0 42 2;
-#X connect 44 0 38 1;
-#X connect 44 0 41 1;
-#X connect 44 0 42 1;
-#X connect 45 0 43 0;
-#X connect 46 0 38 3;
-#X connect 46 0 41 3;
-#X connect 46 0 42 3;
+#X connect 40 0 7 0;
+#X connect 41 0 8 0;
+#X connect 42 0 37 2;
+#X connect 42 0 40 2;
+#X connect 42 0 41 2;
+#X connect 43 0 37 1;
+#X connect 43 0 40 1;
+#X connect 43 0 41 1;
+#X connect 44 0 42 0;
+#X connect 45 0 37 3;
+#X connect 45 0 40 3;
+#X connect 45 0 41 3;
 #X coords 0 -1 1 1 200 60 2 450 400;
