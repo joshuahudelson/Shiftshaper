@@ -1,9 +1,9 @@
-#N canvas 203 108 1157 640 10;
+#N canvas 200 112 1157 640 10;
 #X obj 237 403 tapper \$1 \$2 \$3;
 #X obj 317 117 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
 #X obj 317 100 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 15 256;
+-262144 -1 -1 0 256;
 #X obj 317 134 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
 #X obj 317 151 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
@@ -92,6 +92,8 @@
 1;
 #X obj 25 82 t b f;
 #X msg 25 106 0;
+#X obj 837 23 loadbang;
+#X msg 837 44 0;
 #X connect 1 0 0 2;
 #X connect 2 0 0 1;
 #X connect 3 0 0 3;
@@ -180,4 +182,6 @@
 #X connect 72 0 73 0;
 #X connect 72 1 2 0;
 #X connect 73 0 5 0;
+#X connect 74 0 75 0;
+#X connect 75 0 58 0;
 #X coords 0 -1 1 1 606 68 2 300 100;

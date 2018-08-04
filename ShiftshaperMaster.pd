@@ -1,4 +1,4 @@
-#N canvas 43 100 1306 566 10;
+#N canvas 43 104 1306 566 10;
 #X obj 332 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 1008 473 Notes;
@@ -6,6 +6,5 @@
 #X text 9 370 126;
 #X obj 1008 445 Controller_Input;
 #X obj 40 334 presetter 0 1 2;
-#X obj 667 334 presetter 3 4 5;
-#X obj 360 575 shift_register_sixteen_bit, f 46;
 #X text 26 451 2 Probably some stuff for the rhythmer...;
+#X obj 667 334 presetter 3 4 5;

@@ -1,26 +1,26 @@
-#N canvas 222 193 1038 536 10;
+#N canvas 216 201 1038 536 10;
 #X obj 87 589 panner;
 #X obj 125 403 r~ reg\$1-tap0;
 #X obj 213 431 r~ reg\$2-tap0;
 #X obj 301 459 r~ reg\$3-tap0;
 #X obj 841 386 inlet;
 #X obj 453 403 hradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 0;
 #X obj 456 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2450 1;
 #X obj 526 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2450 1;
 #X obj 595 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 2450 1;
 #X obj 453 250 unpack f f f;
 #X text 10 561 Need to put limits so can't exceed 1 and zero in panner?
 ;
 #X obj 563 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 466 1;
 #X obj 631 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 466 1;
 #X obj 493 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
+-1 -1 466 1;
 #X obj 453 189 t b b;
 #X msg 453 229 0.5 0.5 0.5;
 #X msg 485 209 0.333 0.333 0.333;
