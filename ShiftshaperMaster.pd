@@ -1,4 +1,4 @@
-#N canvas 43 104 1306 566 10;
+#N canvas 43 99 1293 563 10;
 #X obj 332 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 1008 473 Notes;
