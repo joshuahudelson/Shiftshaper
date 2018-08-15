@@ -1,6 +1,6 @@
-#N canvas 70 90 1257 662 10;
+#N canvas 67 94 1257 662 10;
 #X msg 612 377 \; pd dsp \$1;
-#X obj 612 237 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 612 237 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 695 645 dac~;
 #X obj 131 459 lop~;
@@ -10,7 +10,7 @@
 #X text 641 242 DSP;
 #X obj 23 14 loadbang;
 #X obj 362 226 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6200 1;
+-1 -1 6350 1;
 #X obj 262 546 t f f;
 #X obj 208 592 abs;
 #X obj 208 573 - 1;
@@ -19,12 +19,12 @@
 #X obj 920 598 *~;
 #X obj 1111 598 *~;
 #X obj 747 226 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 8200 1;
+-1 -1 6350 1;
 #X obj 1004 524 t f f;
 #X obj 1004 562 abs;
 #X obj 1004 543 - 1;
 #X obj 362 203 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
--262144 -1 -1 11780 1;
+-262144 -1 -1 12700 1;
 #X obj 747 203 hsl 128 15 0.001 1 1 0 empty empty empty -2 -8 0 10
 -262144 -1 -1 12700 1;
 #X text 330 203 LoP;
@@ -42,7 +42,7 @@
 #X obj 359 108 r fader-0;
 #X obj 359 88 r trim-0;
 #X obj 362 249 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6700 1;
+-1 -1 12700 1;
 #X obj 747 249 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 12700 1;
 #X text 715 249 Vol;
@@ -54,7 +54,7 @@
 #X obj 744 159 r fader-3;
 #X msg 359 31 1;
 #X msg 744 31 1;
-#X obj 618 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 618 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 130 336 r~ panpre012-l-send;
 #X obj 321 336 r~ panpre012-r-send;
@@ -66,7 +66,7 @@
 -1 -1 0 1;
 #X text 715 272 Rev;
 #X obj 362 272 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 6300 1;
+-1 -1 0 1;
 #X text 330 272 Rev;
 #X obj 457 541 Reverber;
 #X floatatom 457 453 5 0 0 0 - - -, f 5;

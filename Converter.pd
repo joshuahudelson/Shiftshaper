@@ -1,4 +1,4 @@
-#N canvas 144 260 987 420 10;
+#N canvas 141 264 987 420 10;
 #X obj 87 83 r sbutton-0;
 #X obj 87 141 r mbutton-0;
 #X obj 87 199 r rbutton-0;
@@ -48,8 +48,6 @@
 #X msg 699 227 22;
 #X msg 801 227 23;
 #X obj 446 380 s fromconverter;
-#X obj 25 145 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
 #X connect 0 0 24 0;
 #X connect 1 0 32 0;
 #X connect 2 0 40 0;
@@ -75,7 +73,6 @@
 #X connect 22 0 39 0;
 #X connect 23 0 47 0;
 #X connect 24 0 48 0;
-#X connect 24 0 49 0;
 #X connect 25 0 48 0;
 #X connect 26 0 48 0;
 #X connect 27 0 48 0;
