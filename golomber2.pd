@@ -1,13 +1,13 @@
-#N canvas 72 129 1239 616 10;
+#N canvas 69 133 1239 616 10;
 #X obj 300 388 shift_register_sixteen_bit~;
 #X obj 476 122 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 18;
 #X obj 476 134 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 476 146 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 15;
 #X obj 476 158 hradio 12 1 0 32 empty empty empty 0 -8 0 10 -228856
--1 -1 0;
+-1 -1 9;
 #X obj 680 388 shift_register_sixteen_bit~;
 #X obj 618 58 unpack f f f f;
 #X obj 203 550 s~ reg\$1-tap0;
@@ -17,7 +17,7 @@
 #X obj 460 146 vradio 12 1 0 2 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 444 134 vradio 12 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 1;
 #X obj 858 295 triple_bitwise \$1 \$2;
 #X obj 393 550 s~ reg\$1-tap2;
 #X obj 565 550 s~ reg\$1-tap3;
@@ -57,8 +57,8 @@
 #X floatatom 302 148 5 0 0 0 - - -, f 5;
 #N canvas 43 85 450 250 (subpatch) 0;
 #X array scope\$1 79 float 1;
-#A 0 0 0 0 0 0 0 0 0 1 1 0 1 1 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0
+#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 1 78 0 79 42 2 0 0;
 #X restore 362 137 graph;
@@ -92,9 +92,9 @@
 #X obj 1051 192 t b f;
 #X obj 1085 220 t b f;
 #X obj 27 381 metro 150;
-#X obj 206 32 r wheeler\$1;
-#X obj 206 60 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X obj 160 31 r wheeler\$1;
+#X obj 160 51 t b f;
+#X obj 192 71 * 150;
 #X connect 0 0 57 2;
 #X connect 0 0 58 2;
 #X connect 0 1 57 3;
@@ -256,4 +256,6 @@
 #X connect 77 0 51 0;
 #X connect 78 0 79 0;
 #X connect 79 0 45 0;
+#X connect 79 1 80 0;
+#X connect 80 0 60 0;
 #X coords 0 -1 1 1 558 60 2 302 122;
