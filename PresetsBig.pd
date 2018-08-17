@@ -1,4 +1,4 @@
-#N canvas 226 301 1323 543 10;
+#N canvas 43 205 1323 543 10;
 #X obj 10 509 s topology\$1\$2\$3-receive;
 #X obj 29 490 s gates3\$1\$2\$3-receive;
 #X obj 48 471 s gates2\$1\$2\$3-receive;
@@ -47,7 +47,7 @@
 #X msg 653 117 3 0 0 2 0 2 1 0 0 0 3;
 #X msg 10 272 3 0 0 2 0 0 1 0 0 0 3;
 #X obj 9 99 sel 0 1 2 3 4 5 6 7 8 9 10 11;
-#X obj 227 99 sel 12 13 14 15 16 17 18 19 20 21 22 23;
+#X obj 229 99 sel 12 13 14 15 16 17 18 19 20 21 22 23;
 #X connect 35 0 0 0;
 #X connect 35 1 1 0;
 #X connect 35 2 2 0;
