@@ -1,4 +1,4 @@
-#N canvas 43 107 1293 563 10;
+#N canvas 43 111 1293 563 10;
 #X obj 332 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
 #X obj 1008 473 Notes;
@@ -6,6 +6,6 @@
 #X text 9 370 126;
 #X obj 1008 445 Controller_Input;
 #X obj 40 334 presetter 0 1 2;
-#X obj 667 334 presetter 3 4 5;
 #X text 40 415 - change lowpass to bandpass \; - do all presets \;
 - do global presets \; - quick way to shut one of three off \;;
+#X obj 667 334 presetter 3 4 5;
