@@ -1,13 +1,13 @@
-#N canvas 43 220 1157 526 10;
+#N canvas 43 221 1273 526 10;
 #X obj 86 380 *~;
-#X obj 278 164 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+#X obj 284 164 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
+-1 -1 2;
 #X obj 9 162 sel 0 1 2 3;
-#X obj 623 164 vradio 13 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
-#X obj 327 165 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
+#X obj 671 164 vradio 13 1 0 6 empty empty empty 0 -8 0 10 -262144
+-1 -1 1;
+#X obj 340 165 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X text 621 150 DELAY;
+#X text 669 150 DELAY;
 #X obj 758 150 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -228856
 -1 -1 0;
 #X obj 758 174 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -262144
@@ -25,77 +25,77 @@
 #X msg 1032 238 1 0;
 #X obj 952 235 unpack f f;
 #X obj 1032 258 unpack f f;
-#X obj 379 164 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
+#X obj 404 164 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 565 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+#X obj 608 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
+-1 -1 0;
 #X obj 9 336 s topology\$1;
 #X obj 40 317 s topology\$2;
 #X obj 72 298 s topology\$3;
 #X obj 87 410 throw~ reg\$1-inlet;
-#X obj 379 272 s xor_inline_onoff\$1\$2\$3;
+#X obj 404 272 s xor_inline_onoff\$1\$2\$3;
 #X obj 934 298 r~ signal_router\$1\$2\$3-0-outlet;
 #X obj 1001 316 r~ signal_router\$1\$2\$3-1-outlet;
 #X obj 1010 133 unpack f f f;
 #X msg 1010 114 0 0 0;
 #X msg 1047 76 0 1 1;
-#X obj 430 165 vradio 12 1 0 4 empty empty empty 0 -8 0 10 -262144
+#X obj 461 165 vradio 12 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 2;
-#X text 428 150 GATES 1;
+#X text 459 150 GATES 1;
 #X msg 1028 95 1 0 0;
-#X text 564 150 TAPS 2;
+#X text 607 150 TAPS 2;
 #X obj 1010 38 sel 0 1 2 3;
 #X msg 1065 57 0 0 1;
-#X obj 278 310 s topology\$1\$2\$3-send;
-#X obj 278 65 r topology\$1\$2\$3-receive;
+#X obj 284 310 s topology\$1\$2\$3-send;
+#X obj 284 65 r topology\$1\$2\$3-receive;
 #X obj 9 143 r topology\$1\$2\$3-send;
-#X obj 327 291 s gates3\$1\$2\$3-send;
-#X obj 327 84 r gates3\$1\$2\$3-receive;
-#X obj 430 253 s gates1\$1\$2\$3-send;
-#X obj 565 291 s taps2\$1\$2\$3-send;
-#X obj 623 272 s delay\$1\$2\$3-send;
-#X obj 379 103 r gates2\$1\$2\$3-receive;
-#X obj 430 122 r gates1\$1\$2\$3-receive;
-#X obj 565 84 r taps2\$1\$2\$3-receive;
+#X obj 340 291 s gates3\$1\$2\$3-send;
+#X obj 340 84 r gates3\$1\$2\$3-receive;
+#X obj 461 253 s gates1\$1\$2\$3-send;
+#X obj 608 291 s taps2\$1\$2\$3-send;
+#X obj 671 272 s delay\$1\$2\$3-send;
+#X obj 404 103 r gates2\$1\$2\$3-receive;
+#X obj 461 122 r gates1\$1\$2\$3-receive;
+#X obj 608 84 r taps2\$1\$2\$3-receive;
 #X obj 1010 19 r gates1\$1\$2\$3-send;
-#X obj 623 103 r delay\$1\$2\$3-receive;
+#X obj 671 103 r delay\$1\$2\$3-receive;
 #X obj 206 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 206 262 triggerer \$1 \$2 \$3;
 #X text 206 150 WHEEL;
-#X obj 493 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
+#X obj 530 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
 -1 -1 3;
-#X text 495 150 TAPS 4;
+#X text 532 150 TAPS 4;
 #X obj 206 46 r wheel\$1\$2\$3-receive;
 #X msg 46 202 1 1 0 1;
 #X msg 27 221 2 2 2 0;
 #X msg 9 240 0 0 0 0;
 #X obj 9 260 unpack f f f f;
-#X text 276 150 TOPOS;
-#X text 291 163 OFF \; 3 \; 1 \; 1+;
-#X text 326 150 GATES3;
-#X text 393 162 OFF \; L \; R \; ALL;
-#X text 378 150 GATES2;
-#X text 579 163 0 4 \; 4 8 \; 0 11 \; 5 8 \; 548;
-#X text 442 163 LEFT \; RIGHT \; XOR \; NULL;
+#X text 282 150 TOPOS;
+#X text 297 163 OFF \; 3 \; 1 \; 1+;
+#X text 339 150 GATES3;
+#X text 418 162 OFF \; L \; R \; ALL;
+#X text 403 150 GATES2;
+#X text 622 163 0 4 \; 4 8 \; 0 11 \; 5 8 \; 548;
+#X text 473 163 LEFT \; RIGHT \; XOR \; NULL;
 #X text 220 163 1 1 1 \; 16 1 1 \; R 0 0 \; R 1 1 \; R R R \;;
-#X obj 446 421 Translator \$1 \$2 \$3;
-#X text 341 164 BYP \; XOR \; 1XOR \; MIX \;;
-#X obj 493 310 s taps4\$1\$2\$3-send;
-#X obj 493 65 r taps4\$1\$2\$3-receive;
-#X text 636 163 1s \; 3 \, 25 \; 6 \, 5 \; 12 \, 19 \; Sh/Lg \; Doubles
-;
-#X text 507 163 ZEROES \; 1234 \; 1-12 \; RAND \; RAND+31;
+#X obj 647 412 Translator \$1 \$2 \$3;
+#X text 354 164 BYP \; XOR \; 1XOR \; MIX \;;
+#X obj 530 310 s taps4\$1\$2\$3-send;
+#X obj 530 65 r taps4\$1\$2\$3-receive;
+#X text 544 163 ZEROES \; 1234 \; 1-12 \; RAND \; RAND+31;
 #X msg 64 183 3 3 0 1;
 #X text 2 69 Note \, on 1+ (3 3 0 1) \; the delay after the third \;
 register doesn't have any \; effect because the tap comes \; before
 it.;
+#X text 684 163 1s \; 3 \, 25 \; 6 \, 5 \; Fast \; Harmonics \; Polyrhythm
+;
 #X connect 0 0 26 0;
 #X connect 1 0 39 0;
 #X connect 2 0 60 0;
 #X connect 2 1 59 0;
 #X connect 2 2 58 0;
-#X connect 2 3 76 0;
+#X connect 2 3 75 0;
 #X connect 3 0 46 0;
 #X connect 4 0 42 0;
 #X connect 6 0 13 0;
@@ -154,5 +154,5 @@ it.;
 #X connect 61 2 25 0;
 #X connect 61 3 0 1;
 #X connect 73 0 55 0;
-#X connect 76 0 61 0;
+#X connect 75 0 61 0;
 #X coords 0 -1 1 1 606 100 2 200 150;
