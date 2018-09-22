@@ -1,18 +1,18 @@
-#N canvas 98 108 1157 640 10;
+#N canvas 80 104 1157 640 10;
 #X obj 237 403 tapper \$1 \$2 \$3;
 #X obj 317 117 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
 #X obj 317 100 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
--262144 -1 -1 15 256;
-#X obj 317 134 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
+#X obj 317 134 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
+-262144 -1 -1 277 256;
 #X obj 317 151 nbx 5 17 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 13
 -262144 -1 -1 0 256;
 #X obj 300 100 vradio 17 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 2;
 #X text 275 112 91;
 #X obj 384 100 vradio 17 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 2;
 #X msg 321 58 set \$1;
 #X obj 205 379 t f f;
 #X obj 406 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
@@ -26,7 +26,7 @@
 #X obj 417 324 Flusher \$1 \$2 \$3;
 #X obj 417 269 bng 13 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 432 269 Flush buffers;
+#X text 435 267 Flush buffers;
 #X msg 385 298 set \$1;
 #X floatatom 385 361 5 0 0 0 - - -, f 5;
 #X obj 222 -68 unpack f f f f;
@@ -37,12 +37,12 @@
 #X msg 317 -9 set \$1;
 #X msg 317 -30 set \$1;
 #X msg 317 -51 set \$1;
-#X obj 802 299 PresetsBig \$1 \$2 \$3;
-#X obj 441 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 677 388 PresetsBig \$1 \$2 \$3;
+#X obj 441 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 542 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 643 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 643 104 tgl 20 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 921 -69 r LED\$1\$2\$3;
 #X obj 921 -41 t f b;
@@ -58,7 +58,7 @@
 #X obj 507 143 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 608 128 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
+-1 -1 4;
 #X obj 608 143 hradio 15 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
 #X obj 507 78 moduleighter;

@@ -1,17 +1,17 @@
-#N canvas 43 221 1273 526 10;
+#N canvas 43 229 1273 526 10;
 #X obj 86 380 *~;
 #X obj 284 164 vradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
-#X obj 9 162 sel 0 1 2 3;
-#X obj 671 164 vradio 13 1 0 6 empty empty empty 0 -8 0 10 -262144
 -1 -1 1;
+#X obj 9 162 sel 0 1 2 3;
+#X obj 671 155 vradio 13 1 0 7 empty empty empty 0 -8 0 10 -262144
+-1 -1 5;
 #X obj 340 165 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
--1 -1 0;
-#X text 669 150 DELAY;
+-1 -1 2;
+#X text 709 150 DELAY;
 #X obj 758 150 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -228856
 -1 -1 0;
 #X obj 758 174 hradio 24 1 0 2 empty empty empty 0 -8 0 10 -262144
--1 -1 1;
+-1 -1 0;
 #X obj 934 327 *~;
 #X obj 970 327 *~;
 #X obj 1001 347 *~;
@@ -40,7 +40,7 @@
 #X msg 1010 114 0 0 0;
 #X msg 1047 76 0 1 1;
 #X obj 461 165 vradio 12 1 0 4 empty empty empty 0 -8 0 10 -262144
--1 -1 2;
+-1 -1 3;
 #X text 459 150 GATES 1;
 #X msg 1028 95 1 0 0;
 #X text 607 150 TAPS 2;
@@ -64,7 +64,7 @@
 #X obj 206 262 triggerer \$1 \$2 \$3;
 #X text 206 150 WHEEL;
 #X obj 530 164 vradio 13 1 0 5 empty empty empty 0 -8 0 10 -262144
--1 -1 3;
+-1 -1 4;
 #X text 532 150 TAPS 4;
 #X obj 206 46 r wheel\$1\$2\$3-receive;
 #X msg 46 202 1 1 0 1;
@@ -88,8 +88,8 @@
 #X text 2 69 Note \, on 1+ (3 3 0 1) \; the delay after the third \;
 register doesn't have any \; effect because the tap comes \; before
 it.;
-#X text 684 163 1s \; 3 \, 25 \; 6 \, 5 \; Fast \; Harmonics \; Polyrhythm
-;
+#X text 684 154 1s \; 3 \, 25 \; 6 \, 5 \; Fast \; Harmonics \; Polyrhythm
+\; Long;
 #X connect 0 0 26 0;
 #X connect 1 0 39 0;
 #X connect 2 0 60 0;
