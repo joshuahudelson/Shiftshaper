@@ -1,8 +1,8 @@
-#N canvas 67 94 1257 662 10;
+#N canvas 55 82 1257 662 10;
 #X msg 612 377 \; pd dsp \$1;
 #X obj 612 237 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 695 645 dac~;
+#X obj 685 645 dac~;
 #X obj 131 459 lop~;
 #X obj 322 487 lop~;
 #X obj 921 499 lop~;
@@ -80,6 +80,18 @@
 #X obj 744 119 r fader-2;
 #X obj 744 99 r trim-2;
 #X msg 710 31 0;
+#X obj 677 492 random 99999;
+#X floatatom 677 520 5 0 0 0 - - -, f 5;
+#X msg 677 545 open -bytes 4 recording\$1.wav;
+#X obj 523 249 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X text 634 270 On/Off;
+#X text 540 249 Record;
+#X obj 677 573 writesf~ 2;
+#X obj 579 428 sel 0 1;
+#X msg 579 556 stop;
+#X msg 602 518 start;
+#X obj 645 464 t b b;
 #X connect 1 0 0 0;
 #X connect 3 0 42 0;
 #X connect 4 0 41 0;
@@ -97,9 +109,13 @@
 #X connect 11 0 13 1;
 #X connect 12 0 11 0;
 #X connect 13 0 2 0;
+#X connect 13 0 76 0;
 #X connect 14 0 2 1;
+#X connect 14 0 76 1;
 #X connect 15 0 2 0;
+#X connect 15 0 76 0;
 #X connect 16 0 2 1;
+#X connect 16 0 76 1;
 #X connect 17 0 18 0;
 #X connect 18 0 20 0;
 #X connect 18 1 16 1;
@@ -151,4 +167,14 @@
 #X connect 67 0 17 0;
 #X connect 68 0 22 0;
 #X connect 69 0 54 0;
+#X connect 70 0 71 0;
+#X connect 71 0 72 0;
+#X connect 72 0 76 0;
+#X connect 73 0 77 0;
+#X connect 77 0 78 0;
+#X connect 77 1 80 0;
+#X connect 78 0 76 0;
+#X connect 79 0 76 0;
+#X connect 80 0 79 0;
+#X connect 80 1 70 0;
 #X coords 0 -1 1 1 645 90 2 300 200;
