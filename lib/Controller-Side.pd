@@ -1,14 +1,14 @@
-#N canvas 43 81 1320 687 10;
+#N canvas 67 89 1320 687 10;
 #X obj 1081 252 r ctl-46;
 #X obj 17 285 r ctl-58;
-#X obj 141 292 r ctl-59;
+#X obj 141 242 r ctl-59;
 #X obj 989 252 r ctl-60;
 #X obj 753 82 r ctl-61;
 #X obj 789 132 r ctl-62;
 #X obj 1081 308 s cyclebutton;
 #X obj 989 308 s setbutton;
 #X obj 17 313 sel 127;
-#X obj 141 323 sel 127;
+#X obj 141 273 sel 127;
 #X obj 789 160 sel 127;
 #X obj 1081 280 sel 127;
 #X obj 989 280 sel 127;
@@ -18,7 +18,7 @@
 #X obj 647 325 Gate;
 #X obj 47 372 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 117 397 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 117 341 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 48 150 loadbang;
 #X obj 1048 338 r ctl-42;
@@ -82,7 +82,7 @@
 #X obj 906 399 sel 127;
 #X obj 977 381 sel 127;
 #X obj 47 396 + 0;
-#X obj 116 416 + 0;
+#X obj 117 416 + 0;
 #X obj 1080 196 r fader-7;
 #X obj 1080 147 r trim-7;
 #X obj 985 168 s wheeler0;
@@ -105,14 +105,20 @@
 #X obj 769 453 t b f;
 #X floatatom 794 496 5 0 0 0 - - -, f 5;
 #X obj 794 514 mod 3;
+#X msg 52 344 0;
+#X msg 17 344 1;
+#X msg 102 304 0;
+#X msg 137 304 1;
 #X connect 0 0 11 0;
 #X connect 1 0 8 0;
 #X connect 2 0 9 0;
 #X connect 3 0 12 0;
 #X connect 4 0 34 0;
 #X connect 5 0 10 0;
-#X connect 8 0 17 0;
-#X connect 9 0 18 0;
+#X connect 8 0 105 0;
+#X connect 8 0 104 0;
+#X connect 9 0 107 0;
+#X connect 9 0 106 0;
 #X connect 10 0 35 0;
 #X connect 11 0 6 0;
 #X connect 12 0 7 0;
@@ -210,3 +216,7 @@
 #X connect 102 0 103 0;
 #X connect 103 0 25 1;
 #X connect 103 0 41 0;
+#X connect 104 0 18 0;
+#X connect 105 0 17 0;
+#X connect 106 0 17 0;
+#X connect 107 0 18 0;

@@ -1,4 +1,4 @@
-#N canvas 144 187 1138 568 10;
+#N canvas 90 250 1576 679 10;
 #X obj 395 9 inlet;
 #X obj 497 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -15,17 +15,17 @@
 #X msg 497 207 0 0 0;
 #X msg 646 235 0 0 0;
 #X msg 795 263 0 0 0;
-#X floatatom 70 83 5 0 0 0 - - -, f 5;
-#X floatatom 210 59 5 0 0 0 - - -, f 5;
-#X obj 70 110 expr $f1 \; if ($f1 >= $f2 \, $f1 \, $f2);
-#X obj 210 83 t b f;
-#X floatatom 242 151 5 0 0 0 - - -, f 5;
-#X obj 242 178 expr $f1 \; if ($f1 >= $f2 \, $f1 \, $f2);
-#X obj 382 151 t b f;
-#X obj 70 35 r delay\$1-send;
-#X obj 210 35 r delay\$2-send;
-#X obj 382 123 r delay\$3-send;
-#X obj 261 336 del;
+#X floatatom 20 63 5 0 0 0 - - -, f 5;
+#X floatatom 140 38 5 0 0 0 - - -, f 5;
+#X obj 20 101 expr $f1 \; if ($f1 >= $f2 \, $f1 \, $f2);
+#X obj 140 62 t b f;
+#X floatatom 167 143 5 0 0 0 - - -, f 5;
+#X obj 167 170 expr $f1 \; if ($f1 >= $f2 \, $f1 \, $f2);
+#X obj 218 125 t b f;
+#X obj 20 14 r delay\$1-send;
+#X obj 140 14 r delay\$2-send;
+#X obj 218 97 r delay\$3-send;
+#X obj 299 235 del;
 #X msg 437 428 1 1 1;
 #X obj 497 235 s gates3\$1\$2-topanel;
 #X obj 646 263 s gates3\$2\$3-topanel;
@@ -55,28 +55,28 @@
 #X obj 847 365 Gate;
 #X obj 697 367 Gate;
 #X obj 547 365 Gate;
-#X msg 1068 187 2;
-#X msg 1068 165 set \$1;
-#X obj 1123 165 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X msg 1182 183 2;
+#X msg 1209 147 set \$1;
+#X obj 1182 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 1106 98 2;
-#X msg 1068 97 1;
-#X obj 396 246 t b b b;
+#X msg 1215 83 2;
+#X msg 1182 83 1;
+#X obj 562 6 t b b b;
 #X obj 319 271 t b b;
 #X obj 622 361 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 1069 132 t b f;
-#X obj 1071 41 loadbang;
-#X floatatom 69 425 5 0 0 0 - - -, f 5;
-#X msg 69 385 set \$1;
-#X obj 157 388 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1182 118 t b f;
+#X obj 1215 44 loadbang;
+#X floatatom 1236 538 5 0 0 0 - - -, f 5;
+#X msg 1236 498 set \$1;
+#X obj 1324 501 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 69 305 r topology\$1\$2\$3-send;
-#X obj 69 446 s topology\$1\$2\$3-receive;
-#X obj 44 347 Gate;
-#X msg 282 386 1;
-#X obj 414 215 * 2;
-#X obj 157 509 outlet;
+#X obj 1236 418 r topology\$1\$2\$3-send;
+#X obj 1236 559 s topology\$1\$2\$3-receive;
+#X obj 1211 460 Gate;
+#X msg 1449 499 1;
+#X obj 314 212 * 2;
+#X obj 1324 622 outlet;
 #X connect 0 0 55 0;
 #X connect 1 0 10 0;
 #X connect 2 0 10 0;
