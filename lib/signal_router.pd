@@ -1,4 +1,4 @@
-#N canvas 43 100 1296 652 10;
+#N canvas 67 123 1296 629 10;
 #X obj 297 359 *~;
 #X obj 354 359 *~;
 #X obj 413 359 *~;
@@ -25,10 +25,10 @@
 #X obj 923 468 *~;
 #X obj 531 553 bitwiser;
 #X obj 180 380 vradio 12 1 0 15 empty empty empty 0 -8 0 10 -228856
--1 -1 11;
+-1 -1 5;
 #X obj 192 380 vradio 12 1 0 15 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 186 368 tgl 12 0 empty empty empty 17 7 0 10 -262130 -1 -1 0
+#X obj 186 368 tgl 12 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 7 381 inlet;
 #X obj 59 381 inlet;

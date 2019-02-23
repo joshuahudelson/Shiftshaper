@@ -1,11 +1,15 @@
-#N canvas 125 113 1293 563 10;
+#N canvas 67 113 1620 881 10;
+#X obj 32 28 cnv 15 1250 500 empty empty empty 20 12 0 14 -99865 -66577
+0;
 #X obj 332 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
-#X obj 1008 473 Notes;
-#X obj 667 42 Shiftshaper2 3 4 5;
+#X obj 1008 623 Notes;
 #X text 9 370 126;
-#X obj 1008 445 Controller_Input;
-#X obj 40 334 presetter 0 1 2;
-#X text 40 415 - change lowpass to bandpass \; - do all presets \;
+#X obj 1008 595 Controller_Input;
+#X text 40 605 - change lowpass to bandpass \; - do all presets \;
 - do global presets \; - quick way to shut one of three off \;;
+#X obj 667 42 Shiftshaper2 3 4 5;
 #X obj 667 334 presetter 3 4 5;
+#X obj 40 334 presetter 0 1 2;
+#X text 494 547 Volume should go back to some set level on last volume
+walker preset... right now just stays whatever it was...;
