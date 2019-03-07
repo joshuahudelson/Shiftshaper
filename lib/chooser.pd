@@ -1,37 +1,44 @@
-#N canvas 89 274 450 474 10;
-#X obj 174 57 inlet;
-#X obj 234 109 < 16;
-#X obj 234 130 sel 1;
-#X obj 234 152 t b b b;
-#X msg 257 193 0;
-#X msg 234 214 1;
-#X obj 197 242 spigot;
-#X obj 174 263 spigot;
-#X obj 170 152 t b b b;
-#X msg 193 193 0;
-#X msg 170 214 1;
-#X obj 174 88 t f f f;
-#X obj 174 358 outlet;
-#X floatatom 202 303 5 0 0 0 - - -, f 5;
-#X floatatom 241 303 5 0 0 0 - - -, f 5;
-#X obj 241 358 outlet;
-#X obj 241 334 - 16;
-#X msg 280 174 300;
-#X msg 216 172 300;
+#N canvas 163 239 854 653 10;
+#X obj 174 27 inlet;
+#X obj 261 117 < 16;
+#X obj 261 146 sel 1;
+#X obj 261 175 t b b b, f 10;
+#X msg 289 238 0;
+#X msg 261 267 1;
+#X obj 217 435 spigot;
+#X obj 174 435 spigot;
+#X obj 110 245 t b b b;
+#X msg 129 303 0;
+#X msg 110 332 1;
+#X obj 174 88 t f f f, f 15;
+#X obj 174 512 outlet;
+#X floatatom 174 464 5 0 0 0 - - -, f 5;
+#X floatatom 217 465 5 0 0 0 - - -, f 5;
+#X obj 217 512 outlet;
+#X obj 217 486 - 16;
+#X msg 149 274 999;
+#X msg 318 209 999;
+#X text 209 28 Receives the index of the tapped bit in the shift register.
+;
+#X text 346 297 If the number is less than 16 \, send it out the first
+outlet and send 999 (could be any number greater than 15 \; it will
+trigger all taps closed in signal_router_sixteen_bit) out the second.
+If it's 16 or above \, send it out the right outlet and send 999 out
+the left outlet.;
 #X connect 0 0 11 0;
 #X connect 1 0 2 0;
 #X connect 2 0 3 0;
 #X connect 2 1 8 0;
 #X connect 3 0 5 0;
 #X connect 3 1 4 0;
-#X connect 3 2 17 0;
+#X connect 3 2 18 0;
 #X connect 4 0 6 1;
 #X connect 5 0 7 1;
 #X connect 6 0 14 0;
 #X connect 7 0 13 0;
 #X connect 8 0 10 0;
 #X connect 8 1 9 0;
-#X connect 8 2 18 0;
+#X connect 8 2 17 0;
 #X connect 9 0 7 1;
 #X connect 10 0 6 1;
 #X connect 11 0 7 0;
@@ -40,6 +47,6 @@
 #X connect 13 0 12 0;
 #X connect 14 0 16 0;
 #X connect 16 0 15 0;
-#X connect 17 0 14 0;
-#X connect 18 0 13 0;
-#X coords 0 -1 1 1 80 20 2 200 300;
+#X connect 17 0 13 0;
+#X connect 18 0 14 0;
+#X coords 0 653 1 652 80 20 0;

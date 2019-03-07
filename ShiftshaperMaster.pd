@@ -1,9 +1,9 @@
-#N canvas 104 102 1742 931 10;
+#N canvas 67 87 1853 993 10;
 #X obj 32 28 cnv 15 1250 500 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X obj 282 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
-#X obj 1008 623 Notes;
+#X obj 1556 89 Notes;
 #X text 9 370 126;
 #X obj 667 42 Shiftshaper2 3 4 5;
 #X obj 667 334 presetter 3 4 5;
@@ -13,8 +13,8 @@ to shut one of three off \;;
 #X obj 1393 294 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj 1510 445 s switchbuff0;
-#X obj 1354 352 t b b;
-#X msg 1322 415 0;
+#X obj 1416 323 t b b;
+#X msg 1311 452 0;
 #X text 1356 256 FLUSH 1;
 #X msg 1322 528 3;
 #X obj 1447 534 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
