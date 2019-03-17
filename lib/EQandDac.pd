@@ -1,5 +1,5 @@
 #N canvas 67 89 1432 662 10;
-#X msg 672 377 \; pd dsp \$1;
+#X msg 616 342 \; pd dsp \$1;
 #X obj 745 645 dac~;
 #X obj 83 13 loadbang;
 #X obj 322 546 t f f;
@@ -29,7 +29,7 @@
 #X obj 517 541 Reverber;
 #X floatatom 517 453 5 0 0 0 - - -, f 5;
 #X msg 304 31 0;
-#X obj 668 124 r stopbutton;
+#X obj 642 76 r stopbutton;
 #X obj 338 128 r trim-1;
 #X obj 828 119 r fader-2;
 #X obj 828 99 r trim-2;
@@ -38,13 +38,13 @@
 #X floatatom 737 520 5 0 0 0 - - -, f 5;
 #X msg 737 545 open -bytes 4 recording\$1.wav;
 #X obj 737 573 writesf~ 2;
-#X obj 639 428 sel 0 1;
-#X msg 639 556 stop;
-#X msg 662 518 start;
-#X obj 705 464 t b b;
+#X obj 677 401 sel 0 1;
+#X msg 677 544 stop;
+#X msg 696 508 start;
+#X obj 696 464 t b b;
 #X obj 301 201 cnv 15 748 88 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 616 236 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 616 236 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X text 645 241 DSP;
 #X obj 341 226 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
@@ -90,37 +90,41 @@
 #X floatatom 474 203 5 0 0 0 - - -, f 5;
 #X obj 470 42 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
-#X obj 1276 71 Controller_Input;
+#X obj 1057 90 Controller_Input;
 #X obj 191 459 bp~, f 6;
 #X obj 382 487 bp~, f 6;
 #X obj 517 167 r qfactleft;
 #X obj 981 499 bp~, f 6;
 #X obj 1172 507 bp~, f 8;
-#X obj 1086 141 r qfactright;
+#X obj 1007 171 r qfactright;
 #X obj 517 203 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X floatatom 517 203 5 0 0 0 - - -, f 5;
 #X obj 1007 203 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X floatatom 1007 203 5 0 0 0 - - -, f 5;
-#X obj 546 44 loadbang;
 #X obj 964 148 * 10000;
 #X msg 828 31 1;
-#X text 609 46 Q-factor;
 #X text 658 270 REVERB;
-#X msg 560 97 1.5;
-#X msg 518 97 2.5;
+#X msg 1007 31 1.5;
+#X msg 518 31 2.5;
 #X msg 861 31 0.15;
 #X msg 83 185 0.5;
 #X text 309 203 BP;
 #X text 799 203 BP;
-#X connect 2 0 94 0;
+#X obj 562 314 - 1;
+#X obj 562 343 abs;
+#X msg 642 31 0;
+#X connect 2 0 92 0;
 #X connect 2 0 13 0;
 #X connect 2 0 22 0;
-#X connect 2 0 88 0;
+#X connect 2 0 87 0;
 #X connect 2 0 29 0;
 #X connect 2 0 34 0;
-#X connect 2 0 93 0;
+#X connect 2 0 91 0;
+#X connect 2 0 97 0;
+#X connect 2 0 90 0;
+#X connect 2 0 89 0;
 #X connect 3 0 5 0;
 #X connect 3 1 7 1;
 #X connect 4 0 6 1;
@@ -176,14 +180,14 @@
 #X connect 46 0 3 0;
 #X connect 47 0 10 0;
 #X connect 48 0 52 0;
-#X connect 49 0 87 0;
+#X connect 49 0 86 0;
 #X connect 52 0 73 0;
 #X connect 53 0 19 1;
 #X connect 53 0 18 1;
 #X connect 54 0 20 1;
 #X connect 54 0 21 1;
 #X connect 57 0 60 0;
-#X connect 58 0 27 3;
+#X connect 58 0 95 0;
 #X connect 62 0 28 0;
 #X connect 64 0 54 0;
 #X connect 65 0 59 0;
@@ -202,12 +206,13 @@
 #X connect 83 0 77 2;
 #X connect 85 0 79 2;
 #X connect 85 0 80 2;
-#X connect 86 0 91 0;
-#X connect 86 0 92 0;
-#X connect 87 0 71 0;
-#X connect 88 0 54 0;
-#X connect 91 0 85 0;
-#X connect 92 0 83 0;
-#X connect 93 0 49 0;
-#X connect 94 0 48 0;
+#X connect 86 0 71 0;
+#X connect 87 0 54 0;
+#X connect 89 0 85 0;
+#X connect 90 0 83 0;
+#X connect 91 0 49 0;
+#X connect 92 0 48 0;
+#X connect 95 0 96 0;
+#X connect 96 0 27 3;
+#X connect 97 0 58 0;
 #X coords 0 -1 1 1 750 90 2 300 200;
