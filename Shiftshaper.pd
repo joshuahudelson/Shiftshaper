@@ -1,106 +1,11 @@
-#N canvas 67 87 1853 993 10;
+#N canvas 228 182 1389 727 10;
 #X obj 32 28 cnv 15 1250 500 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X obj 282 423 EQandDac;
 #X obj 40 42 Shiftshaper2 0 1 2;
-#X obj 1556 89 Notes;
 #X text 9 370 126;
 #X obj 667 42 Shiftshaper2 3 4 5;
-#X obj 667 334 presetter 3 4 5;
 #X obj 40 334 presetter 0 1 2;
-#X text 40 605 - do all presets \; - do global presets \; - quick way
-to shut one of three off \;;
-#X obj 1393 294 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 1510 445 s switchbuff0;
-#X obj 1416 323 t b b;
-#X msg 1311 452 0;
-#X text 1356 256 FLUSH 1;
-#X msg 1322 528 3;
-#X obj 1447 534 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X msg 1442 616 1;
-#X obj 1388 446 s triggerbypass-01;
-#X obj 1388 476 s triggerbypass-12;
-#X obj 1388 506 s triggerbypass-20;
-#X obj 1510 475 s switchbuff1;
-#X obj 1510 505 s switchbuff2;
-#X obj 1512 603 s negate0;
-#X obj 1512 633 s negate1;
-#X obj 1512 663 s negate2;
-#X msg 1514 560 0;
-#X obj 1323 689 s gates1012-send;
-#X obj 1383 739 s gates1012-receive;
-#X obj 1446 696 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
--1 -1;
-#X obj 1422 576 del 10;
-#X obj 1592 603 s negate3;
-#X obj 1592 633 s negate4;
-#X obj 1592 663 s negate5;
-#N canvas 0 50 450 250 (subpatch) 0;
-#X array array1 700 float 5;
-#A 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0.999 0 0
-0 0 0 0 0 0 0 0 0 0 0 0.999 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999
-0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0
-0 0 0 0 0 1.998 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0.999 0.999 0 0 0 0
-0 0 0 0 0 0 0 0 0 0.999 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0.999 0 0 0
-0 0 0 0 0.999 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0.999
-0 0.999 0 0 0 0 0.999 0 0.999 0 0 0 0 0 0 0.999 0 0.999 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0
-0 0 0 0 0 0 0 0.999 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0.999 0.999
-0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0 0 0.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-0 0 0;
-#X coords 0 1 699 0 700 180 1 0 0;
-#X restore 504 668 graph;
-#X obj 389 743 metro;
-#X obj 389 672 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X floatatom 439 682 5 0 0 0 - - -, f 5;
-#X obj 236 696 r~ panpre012-l-send;
-#X obj 243 851 tabwrite~ array1;
-#X obj 106 804 *~;
-#X floatatom 123 713 5 0 0 0 - - -, f 5;
-#X connect 9 0 11 0;
-#X connect 11 0 10 0;
-#X connect 11 0 20 0;
-#X connect 11 0 21 0;
-#X connect 11 1 12 0;
-#X connect 11 1 14 0;
-#X connect 12 0 17 0;
-#X connect 12 0 18 0;
-#X connect 12 0 19 0;
-#X connect 14 0 15 0;
-#X connect 14 0 26 0;
-#X connect 15 0 25 0;
-#X connect 15 0 29 0;
-#X connect 16 0 22 0;
-#X connect 16 0 23 0;
-#X connect 16 0 24 0;
-#X connect 16 0 28 0;
-#X connect 16 0 30 0;
-#X connect 16 0 31 0;
-#X connect 16 0 32 0;
-#X connect 25 0 22 0;
-#X connect 25 0 23 0;
-#X connect 25 0 24 0;
-#X connect 28 0 27 0;
-#X connect 29 0 16 0;
-#X connect 34 0 38 0;
-#X connect 35 0 34 0;
-#X connect 36 0 34 1;
-#X connect 37 0 39 0;
-#X connect 39 0 38 0;
-#X connect 40 0 39 1;
+#X obj 667 334 presetter 3 4 5;
+#X text 403 557 Flusher still needs to be fixed \; Roamer? Are there
+actually controls for it?;
