@@ -1,4 +1,4 @@
-#N canvas 135 162 1576 897 10;
+#N canvas 67 162 1576 897 10;
 #X obj 562 23 inlet;
 #X obj 457 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -23,13 +23,13 @@
 #X obj 493 365 s gates3\$1\$2-topanel;
 #X obj 660 365 s gates3\$2\$3-topanel;
 #X obj 827 365 s gates3\$3\$1-topanel;
-#X msg 493 584 31 4 11 9;
+#X msg 493 584 31 13 10 18;
 #X obj 493 474 r tap_indices\$1-send;
 #X msg 493 542 set \$1 \$2 \$3 \$4;
-#X msg 643 584 31 6 26 25;
+#X msg 643 584 31 20 21 17;
 #X msg 643 542 set \$1 \$2 \$3 \$4;
 #X obj 643 474 r tap_indices\$2-send;
-#X msg 793 584 31 2 6 8;
+#X msg 793 584 31 11 27 15;
 #X msg 793 542 set \$1 \$2 \$3 \$4;
 #X obj 793 474 r tap_indices\$3-send;
 #X msg 581 684 0 0 0 0;
@@ -58,11 +58,11 @@
 #X obj 1203 518 r topology\$1\$2\$3-send;
 #X obj 1374 729 s topology\$1\$2\$3-receive;
 #X obj 1182 590 Gate;
-#X obj 366 300 outlet;
+#X obj 364 790 outlet;
 #X obj 581 131 t b b;
 #X obj 457 569 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 1182 491 5 0 0 0 - - -, f 5;
+#X floatatom 1163 491 5 0 0 0 - - -, f 5;
 #X obj 457 98 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
 #X text 409 98 BACK ON;
@@ -73,12 +73,12 @@
 #X obj 457 62 del;
 #X obj 472 23 * 2;
 #X obj 1306 95 t b b;
-#X obj 373 183 + 10;
 #X floatatom 978 584 5 0 0 0 - - -, f 5;
 #X obj 957 508 Gate;
 #X obj 978 702 s gates1\$1\$2\$3-send;
 #X obj 978 474 r gates1\$1\$2\$3-receive;
-#X msg 1032 149 3;
+#X msg 1032 149 0;
+#X obj 373 183 + 30;
 #X connect 0 0 47 0;
 #X connect 0 0 62 0;
 #X connect 1 0 6 0;
@@ -148,15 +148,15 @@
 #X connect 55 1 51 0;
 #X connect 57 0 32 0;
 #X connect 57 0 19 0;
-#X connect 57 1 74 0;
+#X connect 57 1 73 0;
 #X connect 58 0 23 0;
 #X connect 58 0 26 0;
 #X connect 58 0 29 0;
-#X connect 58 0 70 0;
+#X connect 58 0 69 0;
 #X connect 59 0 39 0;
 #X connect 59 0 40 0;
 #X connect 59 0 41 0;
-#X connect 59 0 71 0;
+#X connect 59 0 70 0;
 #X connect 60 0 1 0;
 #X connect 60 0 68 0;
 #X connect 62 0 56 0;
@@ -165,11 +165,11 @@
 #X connect 65 0 36 1;
 #X connect 66 0 60 0;
 #X connect 67 0 66 1;
-#X connect 67 0 69 0;
+#X connect 67 0 74 0;
 #X connect 68 0 52 0;
 #X connect 68 1 45 0;
-#X connect 69 0 62 1;
-#X connect 70 0 72 0;
-#X connect 71 1 70 0;
-#X connect 73 0 71 1;
-#X connect 74 0 54 0;
+#X connect 69 0 71 0;
+#X connect 70 1 69 0;
+#X connect 72 0 70 1;
+#X connect 73 0 54 0;
+#X connect 74 0 62 1;

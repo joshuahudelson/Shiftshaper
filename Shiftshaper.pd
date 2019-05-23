@@ -1,4 +1,4 @@
-#N canvas 228 182 1389 727 10;
+#N canvas 181 182 1389 727 10;
 #X obj 32 28 cnv 15 1250 500 empty empty empty 20 12 0 14 -99865 -66577
 0;
 #X obj 282 423 EQandDac;
@@ -7,5 +7,10 @@
 #X obj 667 42 Shiftshaper2 3 4 5;
 #X obj 40 334 presetter 0 1 2;
 #X obj 667 334 presetter 3 4 5;
-#X text 403 557 Flusher still needs to be fixed \; Roamer? Are there
-actually controls for it?;
+#X obj 77 432 cnv 15 160 60 empty empty empty 20 12 0 14 -262144 -66577
+0;
+#X obj 1076 432 cnv 15 160 60 empty empty empty 20 12 0 14 -262144
+-66577 0;
+#X obj 1106 439 Controller_Input;
+#X obj 1142 465 Notes;
+#X text 84 441 PERFECTION IS THE ENEMY \; OF THE GOOD.;

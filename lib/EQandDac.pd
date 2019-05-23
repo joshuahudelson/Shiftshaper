@@ -1,5 +1,5 @@
-#N canvas 284 265 1470 762 10;
-#X msg 616 342 \; pd dsp \$1;
+#N canvas 143 265 1470 762 10;
+#X msg 664 322 \; pd dsp \$1;
 #X obj 745 715 dac~;
 #X obj 83 13 loadbang;
 #X obj 466 519 t f f;
@@ -15,54 +15,54 @@
 #X msg 115 188 0.5;
 #X floatatom 1184 447 5 0 0 0 - - -, f 5;
 #X floatatom 124 478 5 0 0 0 - - -, f 5;
-#X obj 354 147 r fader-0;
-#X obj 320 72 r trim-0;
+#X obj 384 147 r fader-0;
+#X obj 350 72 r trim-0;
 #X obj 381 554 *~;
 #X obj 192 554 *~;
 #X obj 1070 577 *~;
 #X obj 1262 581 *~;
-#X msg 354 31 1;
+#X msg 384 31 1;
 #X obj 190 376 r~ panpre012-l-send;
 #X obj 381 376 r~ panpre012-r-send;
 #X obj 1070 336 r~ panpre345-l-send;
 #X obj 1261 336 r~ panpre345-r-send;
 #X obj 517 571 Reverber;
 #X floatatom 517 483 5 0 0 0 - - -, f 5;
-#X obj 642 76 r stopbutton;
-#X obj 466 150 r trim-1;
-#X obj 912 131 r fader-2;
-#X obj 890 72 r trim-2;
-#X obj 737 480 random 99999;
-#X floatatom 737 508 5 0 0 0 - - -, f 5;
-#X msg 737 533 open -bytes 4 recording\$1.wav;
+#X obj 635 76 r stopbutton;
+#X obj 496 150 r trim-1;
+#X obj 878 111 r fader-2;
+#X obj 780 72 r trim-2;
+#X obj 760 480 random 99999;
+#X floatatom 760 508 5 0 0 0 - - -, f 5;
+#X msg 760 533 open -bytes 4 recording\$1.wav;
 #X obj 737 645 writesf~ 2;
-#X obj 677 423 sel 0 1;
-#X msg 677 532 stop;
-#X msg 696 496 start;
-#X obj 696 452 t b b;
+#X obj 700 423 sel 0 1;
+#X msg 700 532 stop;
+#X msg 719 496 start;
+#X obj 719 452 t b b;
 #X obj 301 201 cnv 15 748 88 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 616 236 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 664 231 tgl 25 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 645 241 DSP;
-#X obj 469 206 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2950 1;
-#X obj 323 206 hsl 100 15 0.001 1 1 0 empty empty empty -2 -8 0 10
--262144 -1 -1 5308 1;
-#X text 445 205 Pan;
-#X text 332 245 Vol;
-#X obj 642 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X text 693 236 DSP;
+#X obj 499 206 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X obj 353 206 hsl 100 15 0.001 1 1 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 8907 1;
+#X text 475 205 Pan;
+#X text 362 245 Vol;
+#X obj 635 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 615 203 hradio 20 1 0 6 empty empty empty 0 -8 0 5 -262144 -1
 -1 0;
-#X text 476 245 Rev;
-#X obj 976 157 r trim-3;
+#X text 506 245 Rev;
+#X obj 908 157 r trim-3;
 #X obj 615 146 r globalpresets;
-#X obj 662 169 r recordbutton;
-#X obj 498 99 r fader-1;
-#X obj 677 241 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 664 169 r recordbutton;
+#X obj 528 99 r fader-1;
+#X obj 700 269 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X text 694 241 Record;
+#X text 717 269 Record;
 #X obj 1126 128 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X obj 124 450 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
@@ -80,49 +80,47 @@
 #X obj 1217 128 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
 #X floatatom 1217 128 5 0 0 0 - - -, f 5;
-#X obj 810 429 * 10000;
-#X msg 948 31 1;
-#X text 658 270 REVERB;
+#X obj 780 429 * 10000;
+#X msg 878 31 1;
+#X text 651 270 REVERB;
 #X msg 1217 31 1.5;
 #X msg 208 31 2.5;
-#X msg 810 31 0.15;
+#X msg 780 31 0.15;
 #X msg 83 188 0.5;
-#X text 304 205 BP;
-#X text 794 205 BP;
-#X obj 642 462 - 1;
-#X obj 642 491 abs;
-#X msg 642 31 0;
-#X obj 354 230 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X text 334 205 BP;
+#X text 764 205 BP;
+#X obj 635 462 - 1;
+#X obj 635 491 abs;
+#X msg 635 31 0;
+#X obj 384 230 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 4900 1;
-#X obj 498 230 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 528 230 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 0 1;
-#X obj 941 206 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 2950 1;
-#X obj 813 206 hsl 100 15 0.001 1 1 0 empty empty empty -2 -8 0 10
--262144 -1 -1 4280 1;
-#X text 917 205 Pan;
-#X obj 845 229 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 911 206 hsl 100 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 4950 1;
+#X obj 783 206 hsl 100 15 0.001 1 1 0 empty empty empty -2 -8 0 10
+-262144 -1 -1 7181 1;
+#X text 887 205 Pan;
+#X obj 878 229 vsl 35 50 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 4900 1;
 #X obj 124 421 * 10000;
-#X text 823 243 Vol;
+#X text 856 243 Vol;
 #X obj 580 393 s flushitall012;
-#X obj 745 239 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1016 246 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 745 354 s flushitall345;
-#X text 739 265 FLUSH;
-#X obj 580 236 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1016 308 s flushitall345;
+#X text 1010 272 FLUSH;
+#X obj 310 246 bng 25 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X text 574 262 FLUSH;
-#X obj 580 106 r cyclebutton;
-#X obj 580 135 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X text 304 272 FLUSH;
+#X obj 310 106 r cyclebutton;
+#X obj 310 135 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 797 147 r setbutton;
-#X obj 797 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 1016 147 r setbutton;
+#X obj 1016 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 63 272 Controller_Input;
-#X obj 98 302 Notes;
 #X obj 1361 223 Globalizer;
-#X msg 498 31 0;
+#X msg 528 31 0;
 #X connect 2 0 76 0;
 #X connect 2 0 13 0;
 #X connect 2 0 22 0;
@@ -131,7 +129,7 @@
 #X connect 2 0 81 0;
 #X connect 2 0 74 0;
 #X connect 2 0 73 0;
-#X connect 2 0 103 0;
+#X connect 2 0 101 0;
 #X connect 3 0 5 0;
 #X connect 3 1 7 1;
 #X connect 4 0 6 1;
@@ -185,7 +183,7 @@
 #X connect 44 0 3 0;
 #X connect 45 0 88 0;
 #X connect 48 0 79 0;
-#X connect 49 0 102 0;
+#X connect 49 0 100 0;
 #X connect 51 0 84 0;
 #X connect 52 0 49 0;
 #X connect 53 0 42 0;
@@ -225,5 +223,5 @@
 #X connect 97 0 94 0;
 #X connect 98 0 99 0;
 #X connect 99 0 91 0;
-#X connect 103 0 83 0;
+#X connect 101 0 83 0;
 #X coords 0 -1 1 1 750 90 2 300 200;
