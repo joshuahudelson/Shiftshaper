@@ -1,36 +1,36 @@
-#N canvas 240 94 1102 678 10;
-#X floatatom 508 242 5 0 0 0 - - -, f 5;
-#X floatatom 36 65 5 0 0 0 - - -, f 5;
-#X obj 403 186 r ctl-\$1;
-#X obj 508 186 r ctl-\$2;
+#N canvas 240 96 1102 678 10;
+#X floatatom 282 292 5 0 0 0 - - -;
+#X floatatom 36 65 5 0 0 0 - - -;
+#X obj 177 236 r ctl-\$1;
+#X obj 282 236 r ctl-\$2;
 #X obj 36 45 r ctl-\$3;
 #X obj 36 152 s sbutton-\$1;
 #X text 34 23 BUTTONS;
 #X obj 36 82 / 127;
-#X text 402 165 ABSOLUTE;
-#X floatatom 36 255 5 0 0 0 - - -, f 5;
-#X obj 36 272 / 127;
-#X obj 36 342 s mbutton-\$1;
-#X floatatom 36 465 5 0 0 0 - - -, f 5;
-#X obj 36 482 / 127;
-#X obj 36 552 s rbutton-\$1;
-#X obj 36 235 r ctl-\$4;
-#X obj 36 445 r ctl-\$5;
-#X floatatom 47 110 5 0 0 0 - - -, f 5;
+#X text 176 215 ABSOLUTE;
+#X floatatom 36 235 5 0 0 0 - - -;
+#X obj 36 252 / 127;
+#X obj 36 322 s mbutton-\$1;
+#X floatatom 36 415 5 0 0 0 - - -;
+#X obj 36 432 / 127;
+#X obj 36 502 s rbutton-\$1;
+#X obj 36 215 r ctl-\$4;
+#X obj 36 395 r ctl-\$5;
+#X floatatom 47 110 5 0 0 0 - - -;
 #X obj 47 128 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X floatatom 47 300 5 0 0 0 - - -, f 5;
-#X obj 47 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X floatatom 47 280 5 0 0 0 - - -;
+#X obj 47 298 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X floatatom 47 510 5 0 0 0 - - -, f 5;
-#X obj 47 528 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X floatatom 47 460 5 0 0 0 - - -;
+#X obj 47 478 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 403 267 s fader-\$1;
-#X obj 508 267 s trim-\$1;
-#X obj 403 214 / 127;
-#X obj 508 214 / 127;
-#X floatatom 403 242 5 0 0 0 - - -, f 5;
-#X text 516 164 TRIM;
+#X obj 177 317 s fader-\$1;
+#X obj 282 317 s trim-\$1;
+#X obj 177 264 / 127;
+#X obj 282 264 / 127;
+#X floatatom 177 292 5 0 0 0 - - -;
+#X text 290 214 TRIM;
 #X connect 0 0 24 0;
 #X connect 1 0 7 0;
 #X connect 2 0 25 0;

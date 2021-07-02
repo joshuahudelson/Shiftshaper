@@ -1,26 +1,26 @@
 #N canvas 163 239 854 653 10;
-#X obj 174 27 inlet;
-#X obj 261 117 < 16;
-#X obj 261 146 sel 1;
-#X obj 261 175 t b b b, f 10;
-#X msg 289 238 0;
-#X msg 261 267 1;
-#X obj 217 435 spigot;
-#X obj 174 435 spigot;
-#X obj 110 245 t b b b;
-#X msg 129 303 0;
-#X msg 110 332 1;
-#X obj 174 88 t f f f, f 15;
-#X obj 174 512 outlet;
-#X floatatom 174 464 5 0 0 0 - - -, f 5;
-#X floatatom 217 465 5 0 0 0 - - -, f 5;
-#X obj 217 512 outlet;
-#X obj 217 486 - 16;
-#X msg 149 274 999;
-#X msg 318 209 999;
-#X text 209 28 Receives the index of the tapped bit in the shift register.
+#X obj 174 198 inlet;
+#X obj 261 268 < 16;
+#X obj 261 297 sel 1;
+#X obj 261 326 t b b b, f 10;
+#X msg 289 350 0;
+#X msg 261 350 1;
+#X obj 217 420 spigot;
+#X obj 174 420 spigot;
+#X obj 116 315 t b b b;
+#X msg 135 373 0;
+#X msg 116 402 1;
+#X obj 174 239 t f f f, f 15;
+#X obj 174 497 outlet;
+#X floatatom 174 449 5 0 0 0 - - -;
+#X floatatom 217 450 5 0 0 0 - - -;
+#X obj 217 497 outlet;
+#X obj 217 471 - 16;
+#X msg 155 344 999;
+#X msg 318 350 999;
+#X text 52 170 Receives the index of the tapped bit in the shift register.
 ;
-#X text 346 297 If the number is less than 16 \, send it out the first
+#X text 56 524 If the number is less than 16 \, send it out the first
 outlet and send 999 (could be any number greater than 15 \; it will
 trigger all taps closed in signal_router_sixteen_bit) out the second.
 If it's 16 or above \, send it out the right outlet and send 999 out

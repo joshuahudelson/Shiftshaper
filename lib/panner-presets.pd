@@ -1,68 +1,68 @@
-#N canvas 67 205 1038 536 10;
-#X obj 87 589 panner;
-#X obj 125 403 r~ reg\$1-tap0;
-#X obj 213 431 r~ reg\$2-tap0;
-#X obj 301 459 r~ reg\$3-tap0;
-#X obj 841 386 inlet;
-#X obj 453 250 unpack f f f;
-#X text 10 561 Need to put limits so can't exceed 1 and zero in panner?
+#N canvas 57 122 1348 870 10;
+#X obj 403 607 panner;
+#X obj 436 541 r~ reg\$1-tap0;
+#X obj 505 562 r~ reg\$2-tap0;
+#X obj 575 583 r~ reg\$3-tap0;
+#X obj 351 455 inlet;
+#X obj 403 352 unpack f f f;
+#X text 406 810 Need to put limits so can't exceed 1 and zero in panner?
 ;
-#X obj 453 189 t b b;
-#X msg 453 229 0.5 0.5 0.5;
-#X msg 485 209 0.333 0.333 0.333;
-#X obj 719 403 unpack f f f;
-#X obj 471 125 t b b;
-#X msg 471 165 0 0.5 1;
-#X msg 503 145 0.666 0.333 0.666;
-#X text 832 364 selector;
-#X obj 174 589 panner;
-#X obj 261 589 panner;
-#X obj 87 773 outlet~;
-#X obj 88 661 +~;
-#X obj 283 661 +~;
-#X obj 88 689 +~;
-#X obj 283 689 +~;
-#X obj 283 773 outlet~;
-#X text 539 17 Mono \, Split \, Single \, Roaming;
-#X obj 490 46 t b b;
-#X msg 490 98 0.5 0 0;
-#X msg 522 76 0.5 0 0;
-#X obj 453 18 sel 0 1 2 3;
-#X text 593 70 Make all of them go through roamers \, so it sets the
+#X obj 403 290 t b b;
+#X msg 403 328 0.5 0.5 0.5;
+#X msg 609 308 0.333 0.333 0.333;
+#X obj 609 473 unpack f f f;
+#X obj 418 238 t b b;
+#X msg 418 266 0 0.5 1;
+#X msg 609 256 0.666 0.333 0.666;
+#X text 336 437 selector;
+#X obj 473 607 panner;
+#X obj 542 607 panner;
+#X obj 403 691 outlet~;
+#X obj 404 639 +~;
+#X obj 561 639 +~;
+#X obj 404 667 +~;
+#X obj 561 667 +~;
+#X obj 561 691 outlet~;
+#X text 479 157 Mono \, Split \, Single \, Roaming;
+#X obj 434 186 t b b;
+#X msg 434 214 0.5 0 0;
+#X msg 609 204 0.5 0 0;
+#X obj 403 158 sel 0 1 2 3;
+#X text 896 206 Make all of them go through roamers \, so it sets the
 line instantly... so the line works for both the stero shifts and the
 roamers....;
-#X floatatom 237 4 5 0 0 0 - - -, f 5;
-#X obj 453 302 roamer;
-#X obj 748 260 loadbang;
-#X obj 493 322 roamer;
-#X obj 534 345 roamer;
-#X msg 736 168 1;
-#X msg 686 276 1000;
-#X msg 788 311 400;
-#X obj 451 401 cnv 15 198 58 empty empty empty 20 12 0 14 -191407 -66577
+#X floatatom 343 291 5 0 0 0 - - -;
+#X obj 403 382 roamer;
+#X obj 668 378 loadbang;
+#X obj 444 402 roamer;
+#X obj 489 425 roamer;
+#X msg 636 364 1;
+#X msg 596 396 1000;
+#X msg 668 421 400;
+#X obj 401 471 cnv 15 198 58 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 453 403 hradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
+#X obj 403 473 hradio 13 1 0 4 empty empty empty 0 -8 0 10 -262144
 -1 -1 0;
-#X obj 456 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 406 512 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 2450 1;
-#X obj 526 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 476 512 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 2450 1;
-#X obj 595 442 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+#X obj 545 512 hsl 50 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 2450 1;
-#X obj 563 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 513 492 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 466 1;
-#X obj 631 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 581 492 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 466 1;
-#X obj 493 422 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+#X obj 443 492 vsl 15 15 0 1 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 466 1;
-#X obj 593 402 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
+#X obj 543 472 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
-#X obj 518 402 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
+#X obj 468 472 cnv 15 31 17 empty empty empty 20 12 0 14 -262144 -66577
 0;
-#X floatatom 518 402 5 0 0 0 - - -, f 5;
-#X floatatom 592 402 5 0 0 0 - - -, f 5;
-#X msg 772 169 0.333 0.333 0.333;
-#X obj 729 131 t b b;
+#X floatatom 468 472 5 0 0 0 - - -;
+#X floatatom 542 472 5 0 0 0 - - -;
+#X msg 609 338 0.333 0.333 0.333;
+#X obj 609 176 t b b;
 #X connect 0 0 18 0;
 #X connect 0 1 21 0;
 #X connect 1 0 0 2;
@@ -126,4 +126,4 @@ roamers....;
 #X connect 49 0 10 0;
 #X connect 50 0 49 0;
 #X connect 50 1 34 0;
-#X coords 0 -1 1 1 200 60 2 450 400;
+#X coords 0 -1 1 1 200 60 2 400 470;

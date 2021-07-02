@@ -1,9 +1,13 @@
-#N canvas 67 227 1243 382 10;
-#X obj 82 31 cnv 15 604 290 empty empty empty 20 12 0 14 -191407 -66577
+#N canvas 360 459 1364 644 10;
+#X obj 81 31 cnv 15 715 340 empty empty empty 20 12 0 14 -191407 -66577
 0;
-#X obj 638 30 Processor \$1 \$2 \$3;
-#X obj 80 42 golomber2 \$1 \$2;
-#X obj 80 222 controlpanel \$1 \$2 \$3;
-#X obj 80 162 golomber2 \$3 \$1;
-#X obj 80 102 golomber2 \$2 \$3;
-#X coords 0 -1 1 1 606 292 2 80 30;
+#X obj 736 31 Processor \$1 \$2 \$3;
+#X obj 80 46 golomber2 \$1 \$2;
+#X obj 80 271 controlpanel \$1 \$2 \$3;
+#X obj 80 196 golomber2 \$3 \$1;
+#X obj 80 121 golomber2 \$2 \$3;
+#X obj 827 209 cnv 15 715 98 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X obj 277 511 cnv 15 654 73 empty empty empty 20 12 0 14 -191407 -66577
+0;
+#X coords 0 -1 1 1 717 341 2 80 30;

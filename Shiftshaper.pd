@@ -1,16 +1,7 @@
-#N canvas 87 182 1389 727 10;
-#X obj 32 28 cnv 15 1250 500 empty empty empty 20 12 0 14 -99865 -66577
-0;
-#X obj 282 423 EQandDac;
-#X obj 40 42 Shiftshaper2 0 1 2;
-#X text 9 370 126;
-#X obj 667 42 Shiftshaper2 3 4 5;
-#X obj 40 334 presetter 0 1 2;
-#X obj 77 432 cnv 15 160 60 empty empty empty 20 12 0 14 -262144 -66577
-0;
-#X obj 1076 432 cnv 15 160 60 empty empty empty 20 12 0 14 -262144
--66577 0;
-#X obj 1106 439 Controller_Input;
-#X obj 1142 465 Notes;
-#X text 121 452 SHIFTSHAPER;
-#X obj 667 334 presetter 3 4 5;
+#N canvas 86 109 1457 655 10;
+#X obj 369 431 EQandDac;
+#X obj 27 22 Shiftshaper2 0 1 2;
+#X obj 744 22 Shiftshaper2 3 4 5;
+#X obj 27 363 presetter 0 1 2;
+#X obj 1150 470 Notes;
+#X obj 744 363 presetter 3 4 5;
